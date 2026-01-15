@@ -3,9 +3,9 @@ title: Debug Extensions in Tableau Desktop
 description: Debug extensions in Tableau Desktop
 ---
 
-A dashboard extension embeds a web page and runs a Chromium-based browser inside of Tableau Desktop. Fortunately, you can debug this embedded web browser using the remote debugging abilities built into Chromium.
+A dashboard extension embeds a web page and runs a Chromium-based browser inside Tableau Desktop. Fortunately, you can debug this embedded web browser by using the remote debugging abilities built into Chromium.
 
-Debugging an extension involves starting Tableau with a command option to enable remote debugging (over a debug port). You can then run a specific version of the Chromium debugger and connect to Tableau Desktop using the debug port.
+Debugging an extension involves starting Tableau with a command option to enable remote debugging (over a debug port). You can then run a specific version of the Chromium or Chrome debugger and connect to Tableau Desktop by using the debug port.
 
 :::note
 
@@ -15,14 +15,22 @@ For Tableau Server or Tableau Cloud, see [Debugging Extensions in Tableau Server
 
 ## Download the Chromium Browser
 
-To debug your extension, you'll need to use a Chromium-based browser (Chromium is the open-source version of Chrome). In some cases you could use Chrome, but because of version incompatibilities in the debugging protocol, we recommend using specific builds of Chromium, which matches the version of the browser running inside Tableau. Just download and unzip the file and run `chrome.exe` (Windows) or `chromium` (macOS).
+To debug your extension, you must use a Chromium-based browser (Chromium is the open-source version of Chrome). In most cases you can use Chrome, but if you encounter browser incompatibilities, we recommend that you use specific builds of Chromium. Use the version of Chromium that matches the version of the browser running inside Tableau. Download and unzip the file (`chrome-mac.zip`, `chrome-win.zip`) and run `chrome.exe` (Windows) or `chromium` (macOS).
 
-Tableau Desktop version  |  Chromium version  | Chrome version
+### Design for compatibility
+
+For the best user experience, design your extension to work with the version of the Chromium that matches the version of Tableau that your customers use. Often this means that you must cover multiple versions of Tableau, so we encourage testing for version compatibility, and carefully coordinating which versions to design for.
+
+To ensure consistency of extensions and other web zone functions, the Chromium packaged with Tableau is maintained with an earlier version. The packaged browser is regularly patched to address Common Vulnerabilities and Exposures (CVE). Please refer to security version listed [QtWebEngine/ChromiumVersions](https://wiki.qt.io/QtWebEngine/ChromiumVersions).
+
+
+Tableau Desktop version  |  Chromium version  | Chrome Version
 |----|----|----|
 2018.2, 2018.3 | 47.0.2526.0 |  Not available
 2019.1 and later | 79.0.3945.0  | Chrome version 79 or earlier.
 Latest maintenance release of 2020.2.7+, 2020.3.6+, 2020.4.2+ | 87.0.4280 | Chrome version 80 or later.
 2021.1 and later | 87.0.4280 | Chrome version 80 or later.
+2025.2 and later |  108.0.5359.220 |  Chrome 108 or later.
 
 **Chromium downloads for debugging Tableau 2018.2, 2018.3**
 
@@ -37,17 +45,20 @@ Latest maintenance release of 2020.2.7+, 2020.3.6+, 2020.4.2+ | 87.0.4280 | Chro
 
 * [Chromium for macOS (`chrome-mac.zip`) (79.0.3945.0)](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Mac/706915/)
 
-<div class="alert alert-info"><b>Note </b> If you are using Tableau 2021.1, or the latest maintenance releases of Tableau 2020.2.2.7+, 2020.3.3.6+, and 2020.4.2+, you can use Chrome version 80 (or later) for debugging your extension.</div>
+<div class="alert alert-info"><b>Note </b> If you're using Tableau 2021.1, or the latest maintenance releases of Tableau 2020.2.2.7+, 2020.3.3.6+, and 2020.4.2+, you can use Chrome version 80 (or later) for debugging your extension.</div>
+
+### About Chromium versions
+
+Finding specific versions of Chromium involves some investigative work. Google doesn't provide an archive of old versions. You must first find the Base Branch Position (a specific commit) that matches the release version you are looking for from [Chromiumdash](https://chromiumdash.appspot.com/releases). Using the Base Branch Position, download the binary from the [Chromium snapshot storage](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html). If you can't find the exact match for the Base Branch Position, choose one that is close to it. Chromium and Chrome releases share the same major version number. For example, Chrome version 108 is built from Chromium version 108. Use versions of Chromium that match the major version and the minor version (as close as possible) to the version you're looking for.
 
 ---
 
-
 ## Start Tableau Desktop and enable debugging (Windows)
 
-1. Exit Tableau if it is already running on your computer.
+1. Exit Tableau if it's running on your computer.
 2. Open a Command Prompt window.
 2. Start Tableau using the following command.
-<br/>Replace `<version>` with the version of Tableau you are using (for example, `Tableau 2018.3`).
+<br/>Replace `<version>` with the version of Tableau you are using (for example, `Tableau 2025.2`).
 
 ```cli
 
@@ -59,7 +70,7 @@ This command enables remote debugging of extensions for this session of Tableau.
 
 :::note
 
-The remote debugging port (for example, `8696`) must match the port address you use with Chromium for debugging. This is *not* the HTTP port that you are using to host your extension, the port that is specified in the manifest file (`.trex`).
+The remote debugging port (for example, `8696`) must match the port address you use with Chromium for debugging. This is *not* the HTTP port that you use to host your extension, the port that is specified in the manifest file (`.trex`).
 
 :::
 
@@ -80,7 +91,7 @@ If you open the file location, you can create a new shortcut to `Tableau.exe` (c
 
 1. Open a Terminal window.
 2. Start Tableau using the following command.
-<br/> Replace `<version>` with the version of Tableau you are using (for example,`2018.3.app`).
+<br/> Replace `<version>` with the version of Tableau you are using (for example,`2025.3.app`).
 
 ```cli
 
@@ -117,7 +128,7 @@ Note that you can only debug one extension, or instance of an extension, at a ti
 
 ## Debugging loading and initialization issues
 
-If you need to troubleshoot or debug issues that prevent your extension from loading or initializing, you can set breakpoints that trigger when your JavaScript code is loaded.
+If you must troubleshoot or debug issues that prevent your extension from loading or initializing, you can set breakpoints that trigger when your JavaScript code is loaded.
 
 ### For Tableau 2021.1 and later
 
