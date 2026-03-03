@@ -8,6 +8,28 @@ description: What's new for each release of the Tableau Extensions API
 
 ---
 
+### Tableau Extensions API version 1.16.0
+
+*February 2026*
+
+* Tableau Dashboard Extensions API library: `tableau.extensions.1.16.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api)). <br />
+
+* Certain features in this release are only available in Tableau Cloud and Tableau Desktop 2026.1 or later. Download [Tableau Desktop](https://www.tableau.com/support/releases).
+
+What's new in this release:
+
+* Added ISO values to `PeriodType` for parameters with `Range` domain type.
+
+* Added support for multiple dialogs. Use the [sendDialogMessageAsync](pathname:///api/interfaces//UI.html#senddialogmessageasync) method can send messages between any two dialog boxes or between any dialog box and the extension.
+
+* Added the [sendDialogMessageAsync](pathname:///api/interfaces//UI.html#senddialogmessagetoparentasync) method to the UI namespace. Sends a message from the dialog box to the extension or to the dialog box (the parent) that opened it.
+
+
+
+---
+
+## Previous Releases
+
 ### Tableau Extensions API version 1.15.0
 
 *September 2025*
@@ -31,10 +53,6 @@ What's new in this release:
 ```
 
 For more information, see [Debug Extensions in Tableau Desktop](./debug/trex_debugging.md).
-
----
-
-## Previous Releases
 
 ---
 
