@@ -22,7 +22,7 @@ What's new in this release:
 
 * Added support for multiple dialogs. Use the [sendDialogMessageAsync](pathname:///api/interfaces//UI.html#senddialogmessageasync) method can send messages between any two dialog boxes or between any dialog box and the extension.
 
-* Added the [sendDialogMessageAsync](pathname:///api/interfaces//UI.html#senddialogmessagetoparentasync) method to the UI namespace. Sends a message from the dialog box to the extension or to the dialog box (the parent) that opened it.
+* Added the [sendDialogMessageToParentAsync](pathname:///api/interfaces//UI.html#senddialogmessagetoparentasync) method to the UI namespace. Sends a message from the dialog box to the extension or to the dialog box (the parent) that opened it.
 
 
 
