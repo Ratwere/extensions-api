@@ -95,6 +95,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dialogmessageevent.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dialogmessageevent.html#sourcedialogurl" class="tsd-kind-icon">source<wbr>Dialog<wbr>Url</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="dialogmessageevent.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
@@ -116,6 +117,24 @@
 						<dl class="tsd-comment-tags">
 							<dt>returns</dt>
 							<dd><p>the message that was sent to/from the dialog.</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sourcedialogurl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> source<wbr>Dialog<wbr>Url</h3>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Dialog<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in packages/api-external-contract-js/src/ExternalContract/Extensions/EventInterface.ts:141</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>returns</dt>
+							<dd><p>the url of the dialog that sent the message.
+								If undefined, the message was sent by the host extension itself.</p>
 							</dd>
 						</dl>
 					</div>
@@ -157,6 +176,9 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="dialogmessageevent.html#message" class="tsd-kind-icon">message</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dialogmessageevent.html#sourcedialogurl" class="tsd-kind-icon">source<wbr>Dialog<wbr>Url</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="dialogmessageevent.html#type" class="tsd-kind-icon">type</a>

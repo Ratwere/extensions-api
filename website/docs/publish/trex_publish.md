@@ -8,7 +8,7 @@ If the dashboard extension is running on a publicly accessible web server over H
 
 ## Sharing an extension by sharing the workbook
 
-The easiest way to share an extension with others is to share the workbook that contains the dashboard extension. If the extension is hosted on web site that is accessible and the extension is using HTTPS protocol, viewers of the dashboard will be able see and use the extension. However, if the users do not also have access to the dashboard extension manifest file (`.trex`), they will not be able to add the extension to other dashboards or to other workbooks.
+The easiest way to share an extension with others is to share the workbook that contains the dashboard extension. If the extension is hosted on a website that is accessible and the extension is using HTTPS protocol, viewers of the dashboard will be able to see and use the extension. However, if the users do not also have access to the dashboard extension manifest file (`.trex`), they will not be able to add the extension to other dashboards or to other workbooks.
 
 ![](../assets/frelard_share_twb.png)
 
@@ -20,7 +20,7 @@ However, to run on Tableau Server or Tableau Cloud, your extension must:
 
 * Be hosted on a web server that uses HTTPS (`localhost` is the exception during development). Note that hosting your extension on the same computer that is running Tableau Server is not recommended.
 * Declare full data access (if the extension calls any functions that access the underlying data in the dashboard).
-* Be granted permission to run on Tableau Server or Tableau Cloud. 
+* Be granted permission to run on Tableau Server or Tableau Cloud.
 
 :::note
 If you want to test your extension with Tableau Cloud and you are running an extension on `http://localhost` during development, see [Load and view localhost content on sites that use secure connections](../security/trex_security#load-and-view-localhost-content-on-sites-that-use-secure-connections)
@@ -53,7 +53,7 @@ In addition to the requirements for all extensions to ensure security and usabil
 
 * Declaring data access requirements
 
-* Providing a URL that customers can use to get support for your the extension
+* Providing a URL that customers can use to get support for your extension
 
 Dashboard extensions that appear in the Tableau Exchange must also:
 
