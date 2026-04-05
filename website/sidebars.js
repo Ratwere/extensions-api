@@ -48,6 +48,7 @@ const sidebars = {
       items: [
         'core/trex_getdata',
         'core/trex_configure',
+        'core/trex_multiple_dialogs',
         'core/trex_tableau_viz',
         'core/trex_format',
         'core/trex_show_hide',
