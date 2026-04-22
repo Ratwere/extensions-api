@@ -22,7 +22,7 @@ What's new in this release:
 
 * Added support for multiple dialogs. In addition to the configuration popup window, you can add other dialog boxes or popup windows that can interact with the extension. See [Add Multiple Dialog Boxes](./core/trex_multiple_dialogs.md).
 
-* Added the [sendDialogMessageAsync](pathname:///api/interfaces/ui.html#senddialogmessageasync) and the [sendDialogMessageToParentAsync](pathname:///api/interfaces/ui.html#senddialogmessagetoparentasync) methods to the UI namespace. Use the `sendDialogMessageAsync` method to send messages between any two dialog boxes, or between any dialog box and the extension. Use the `sendDialogMessageToParentAsync` method to send a message from the dialog box to the extension or to the dialog box (the parent) that opened it. See [Send messages between configuration windows and the extension](core/trex_multiple_dialogs#send-messages-between-configuration-windows-and-the-extension).
+* Added the [sendDialogMessageAsync](pathname:///api/interfaces/ui.html#senddialogmessageasync) and the [sendDialogMessageToParentAsync](pathname:///api/interfaces/ui.html#senddialogmessagetoparentasync) methods to the UI namespace. Use the `sendDialogMessageAsync` method to send messages between any two dialog boxes, or between any dialog box and the extension. Use the `sendDialogMessageToParentAsync` method to send a message from the dialog box to the extension or to the dialog box (the parent) that opened it. See [Send messages between popup dialog boxes and the extension](core/trex_multiple_dialogs#send-messages-between-popup-dialog-boxes-and-the-extension).
 
 
 

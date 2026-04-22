@@ -5,6 +5,12 @@ description: How to add a configuration dialog box to the extension
 
 If you want users to be able to configure settings for your extension, you can use an optional callback function when you initialize your dashboard or viz extension. The callback function creates a configuration option that can be used to open a popup window (dialog box) for your extension. The Extensions API supports different dialog box styles: modal, modeless, or window. You can use the dialog box to allow users to set and save settings for the extension. Starting with Tableau 2026.1 (and the v1.16 library), you can create multiple dialog boxes and send messages between them. 
 
+:::info
+
+By design, there can be only one context configuration popup window or dialog box. For information about creating and using multiple pop dialog boxes or window, see [Add a Multiple Popup Dialog Boxes](trex_multiple_dialogs.md).
+
+:::
+
 ## Add the context menu to the `.trex` file
 
 The first step is to add the `<context-menu>` option to the extension's manifest file (`.trex`). The `<context-menu>` element only contains one item: `<configure-context-menu-item />`.
