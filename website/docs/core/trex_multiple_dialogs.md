@@ -24,7 +24,7 @@ You can't display these other dialog boxes or windows directly when the user sel
 
 ### Basic steps
 
-* Determine how you want the popup windows to interact (if at all). Should they be modal or modeless? A modal dialog box takes the focus and blocks all other windows until the dialog box is closed. A modeless dialog box does not block other windows, and the focus switches depending upon the users selections. 
+* Determine how you want the popup windows to interact (if at all). Should they be modal or modeless? A modal dialog box takes the focus and blocks all other windows until the dialog box is closed. A modeless dialog box does not block other windows, and the focus switches depending upon the user's selections.
 
 * Do the popup windows need to share information or content with the extension? The Extensions API provides methods for sending text (string) messages between the popup windows and the extension.
 
@@ -36,7 +36,7 @@ You can't display these other dialog boxes or windows directly when the user sel
 
   Like the configuration popup, the URL of the additional popup windows must belong to the same domain as the parent extension. The relative paths must resolve to the directory, or a child directory, of the extension. Root-relative paths aren’t allowed. For example, `./config.html` or `config.html` are allowed, but not the root-relative path `/config.html`.
 
-* In your HTML and JavaScript code for your popup window, call the [`initializeDialogAsync()`](pathname:///api/interfaces/extensions.html#initializedialogasync) method and add code to process the initial payload, if you’re using it. In addition to whatever features you want the popup window to do, add a control (for example, a Save button) that you can attach the `closeDialog()` method. The `closeDialog()` method safely closes the dialog box and returns the payload to the calling extension (or window).
+* In your HTML and JavaScript code for your popup window, call the [`initializeDialogAsync()`](pathname:///api/interfaces/extensions.html#initializedialogasync) method and add code to process the initial payload, if you’re using it. In addition to whatever features you want the popup window to do, add a control (for example, a Save button) that you can attach to the `closeDialog()` method. The `closeDialog()` method safely closes the dialog box and returns the payload to the calling extension (or window).
 
 * If you have more than one popup window, you must create a system for tracking the state of each popup window. For example, calling `displayDialogAsync()` method for an already-open dialog box throws an error. And if you only want one popup window open at a time, and you don't want them to be modal, you must track which popup is open and which popup is queued up. A simple Map or Flag variable can accomplish this tracking.
 
@@ -91,7 +91,7 @@ The `openColorDialog()` method calls `tableau.extensions.ui.displayDialogAsync()
 |---|---|
 | `tableau.DialogStyle.Modal` | Blocks all other windows; users must close this dialog before interacting with the extension. |
 | `tableau.DialogStyle.Modeless` | Doesn't block other windows; focus follows user interaction. |
-| `tableau.DialogStyle.Window` | Opens as a separate browser-style window. Behavior depends on the browser. |
+| `tableau.DialogStyle.Window` | Opens as a separate browser-style window; behavior depends on the browser. |
 
 In this code snippet, the dialog style is set to modeless. The complete example extends this to allow the user to choose the dialog style. See [Complete example source code](#complete-example-source-code) and select the **uiNamespace** tab
 
@@ -199,7 +199,7 @@ The popup windows can use the `sendDialogMessageToParentAsync()` method to send 
 
 The `sendDialogMessageToParentAsync()` method takes just one argument, the message to send (a string value). The method only works if it’s called from the popup window.
 
-For example, the following code snippets show how you might tie the send message method to a button in the popup window. In this case, there’s a **Save** button (`saveButton`). When the user clicks the **Save** button, a message gets sent to the extension. The `closeDialog()` method is also called when the user clicks the **Save** button, which closes the popup window and the returns the payload to the extension. We wrap the `sendDialogMessageToParentAsync()` method in another function with the `await` keyword, so that the message is guaranteed to be sent before the dialog box is closed.  
+For example, the following code snippets show how you might tie the send message method to a button in the popup window. In this case, there’s a **Save** button (`saveButton`). When the user clicks the **Save** button, a message gets sent to the extension. The `closeDialog()` method is also called when the user clicks the **Save** button, which closes the popup window and then returns the payload to the extension. We wrap the `sendDialogMessageToParentAsync()` method in another function with the `await` keyword, so that the message is guaranteed to be sent before the dialog box is closed.  
 
 The parent extension's event handler function for the `DialogMessageReceived` event processes the message. 
 
@@ -252,7 +252,7 @@ For example, in the following code snippet, a button in the extension code is ti
 
 ## Track the active popup dialog box
 
-Depending upon your implementation, and whether your dialog boxes are modal or not, if you have multiple popup dialog boxes you will likely need to track which popup is active. At a minimum, you'll want to prevent errors that result if a user tries to open a dialog box that is already open. This can be done with a simple mapping variable. In this, case we declare a set of objects called `openDialog`. The popup dialog boxes can then be added or deleted from the list, depending upon whether they are opened or closed.
+Depending upon your implementation, and whether your dialog boxes are modal or not, if you have multiple popup dialog boxes you will likely need to track which popup is active. At a minimum, you'll want to prevent errors that result if a user tries to open a dialog box that is already open. This can be done with a simple mapping variable. In this case, we declare a set of objects called `openDialog`. The popup dialog boxes can then be added or deleted from the list, depending upon whether they are opened or closed.
 
 ```javascript
 
