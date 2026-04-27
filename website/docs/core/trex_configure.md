@@ -7,7 +7,7 @@ If you want users to be able to configure settings for your extension, you can u
 
 :::info
 
-By design, there can be only one context configuration popup window or dialog box. For information about creating and using multiple pop dialog boxes or window, see [Add a Multiple Popup Dialog Boxes](trex_multiple_dialogs.md).
+By design, there can be only one context configuration popup window or dialog box. For information about creating and using multiple popup dialog boxes or window, see [Add a Multiple Popup Dialog Boxes](trex_multiple_dialogs.md).
 
 :::
 
