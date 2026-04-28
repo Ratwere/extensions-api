@@ -191,7 +191,7 @@ Dropdown controls allow multiple options to be expanded from a menu. Dropdowns h
 | --- | --- |
 | **Outline** | The outline style is the primary variation that should be used. It can be used by itself, on forms, or within dialogues.  |
 | **Line**<br/>(label optional) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Line style dropdowns are useful in areas that have cramped vertical space. This dropdown style can be stacked within panels to avoid a boxy wireframe feel. While the label is optional, we encourage using it to better inform users about the category of items. |
-| **Text** | This style allows the user to access options from a dropdown or ﬂyout menu. This style works well in tool and start bars, as well as in dialogs and menus. |
+| **Text** | This style allows the user to access options from a dropdown or flyout menu. This style works well in tool and start bars, as well as in dialogs and menus. |
 | **Icon** | The icon style works best in small regions such as tool bars, and is great for switches that have several options. |
 
 &nbsp;
