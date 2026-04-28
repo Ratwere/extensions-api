@@ -15,11 +15,9 @@ To create a Tableau viz extension you need the following components.
 ---
 
 
-
-
 ### What you need to get started
 
-These instructions assume that you have already cloned or download the Extensions API SDK. For information about setting up your environment and the Tableau requirements, see [Get Started](./trex_viz_getstarted.md).
+These instructions assume that you have already cloned or downloaded the Extensions API SDK. For information about setting up your environment and the Tableau requirements, see [Get Started](./trex_viz_getstarted.md).
 
 For convenience, you might want to create a folder for your "Hello World" viz extension in the same location where you installed or cloned the GitHub repository. Create your folder, for example, **HelloVizExtension** in the Samples folder, under `/extensions-api/Samples`. That way, you can use the same web server (`http-server`) that is used for the samples.
 

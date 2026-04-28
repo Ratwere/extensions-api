@@ -1,16 +1,21 @@
 ---
-title: Add a Configuration Popup Dialog
+title: Add a Configuration Popup Dialog Box
 description: How to add a configuration dialog box to the extension
 ---
 
-If you want users to be able to configure settings for your extension, you can use an optional callback function when you initialize your dashboard or viz extension. The callback function creates a configuration option that can be used to open a popup window (a modal dialog box) for your extension. You can use this popup window to allow users to set and save settings for the extension.
+If you want users to be able to configure settings for your extension, you can use an optional callback function when you initialize your dashboard or viz extension. The callback function creates a configuration option that can be used to open a popup window (dialog box) for your extension. The Extensions API supports different dialog box styles: modal, modeless, or window. You can use the dialog box to allow users to set and save settings for the extension. Starting with Tableau 2026.1 (and the v1.16 library), you can create multiple dialog boxes and send messages between them. 
 
+:::info
+
+By design, there can be only one context configuration popup window or dialog box. For information about creating and using multiple popup dialog boxes or window, see [Add a Multiple Popup Dialog Boxes](trex_multiple_dialogs.md).
+
+:::
 
 ## Add the context menu to the `.trex` file
 
-The first step is to add the `<context-menu>` option to the extension's manifest file (`.trex`). The `<context-menu>` element only contains one item:  `<configure-context-menu-item />`.
+The first step is to add the `<context-menu>` option to the extension's manifest file (`.trex`). The `<context-menu>` element only contains one item: `<configure-context-menu-item />`.
 
-* The context menu option must follow the `<icon>` and `<permissions>` elements in the  manifest file in the `<dashboard-extension>` or `<worksheet-extension>` section:
+* The context menu option must follow the `<icon>` and `<permissions>` elements in the manifest file in the `<dashboard-extension>` or `<worksheet-extension>` section:
 
 ```xml
 <!-- add to <dashboard-extension> or <worksheet-extension> section
@@ -35,7 +40,6 @@ with adding a `<context-menu>` item to the manifest, adds a new **Configure...**
 with adding a `<context-menu>` item to the manifest, adds a new **Format Extension** button to the Marks card.  
 
 When the user selects the context menu item, or selects **Format Extensions** button, the configuration function you specified is executed.
-
 
 **Dashboard extensions configuration menu**
 
@@ -69,7 +73,6 @@ $(document).ready(function () {
   
 
 
-
    function configure() { 
     // ... code to configure the extension
     // for example, set up and call displayDialogAsync() to create the configuration window 
@@ -82,9 +85,11 @@ $(document).ready(function () {
     // to be updated if the extension is deployed to a new location.
     const popupUrl = `${window.location.origin}/Samples/Dashboard/UINamespace/uiNamespaceDialog.html`;
     // 
+    // Specify the style of dialog box: modal, modeless, or window
+    let dialogStyle = tableau.DialogStyle.Modeless;
     // ...
     // initial payload string value, `defaultIntervalInMin` set 
-    tableau.extensions.ui.displayDialogAsync(popupUrl, defaultIntervalInMin, { height: 500, width: 500 }).then((closePayload) => {
+    tableau.extensions.ui.displayDialogAsync(popupUrl, defaultIntervalInMin, { height: 500, width: 500, dialogStyle }).then((closePayload) => {
       // The promise is resolved when the dialog has been expectedly closed, meaning that
       // the popup extension has called tableau.extensions.ui.closeDialog.
       // ...

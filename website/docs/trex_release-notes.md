@@ -20,9 +20,9 @@ What's new in this release:
 
 * Added ISO values to `PeriodType` for parameters with `Range` domain type.
 
-* Added support for multiple dialogs. Use the [sendDialogMessageAsync](pathname:///api/interfaces/ui.html#senddialogmessageasync) method can send messages between any two dialog boxes or between any dialog box and the extension.
+* Added support for multiple dialogs. In addition to the configuration popup window, you can add other dialog boxes or popup windows that can interact with the extension. See [Add Multiple Dialog Boxes](./core/trex_multiple_dialogs.md).
 
-* Added the [sendDialogMessageToParentAsync](pathname:///api/interfaces/ui.html#senddialogmessagetoparentasync) method to the UI namespace. Sends a message from the dialog box to the extension or to the dialog box (the parent) that opened it.
+* Added the [sendDialogMessageAsync](pathname:///api/interfaces/ui.html#senddialogmessageasync) and the [sendDialogMessageToParentAsync](pathname:///api/interfaces/ui.html#senddialogmessagetoparentasync) methods to the UI namespace. Use the `sendDialogMessageAsync` method to send messages between any two dialog boxes, or between any dialog box and the extension. Use the `sendDialogMessageToParentAsync` method to send a message from the dialog box to the extension or to the dialog box (the parent) that opened it. See [Send messages between popup dialog boxes and the extension](core/trex_multiple_dialogs#send-messages-between-popup-dialog-boxes-and-the-extension).
 
 
 
@@ -99,11 +99,11 @@ What's new in this release:
 
 *May 2024*
 
-* Tableau Dashboard Extensions API library: `tableau.extensions.1.12.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api)..) <br/>
+* Tableau Dashboard Extensions API library: `tableau.extensions.1.12.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api).) <br/>
 
 * Certain features in this release are only available in Tableau 2024.2 or later. Download [Tableau Desktop](https://www.tableau.com/support/releases) or [Tableau Server](https://www.tableau.com/support/releases/server).
 
-* To preview new features and test your extension with the latest version of Tableau in the Developer Sandbox, join the [Tableau Developer Program](http://www.tableau.com/developer). and request your own Tableau Cloud developer site.
+* To preview new features and test your extension with the latest version of Tableau in the Developer Sandbox, join the [Tableau Developer Program](http://www.tableau.com/developer) and request your own Tableau Cloud developer site.
 
 What's new in this release:
 
@@ -150,11 +150,11 @@ Also in this release:
 
 *April 2024*
 
-* Tableau Dashboard Extensions API library: `tableau.extensions.1.11.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api)..) <br/>
+* Tableau Dashboard Extensions API library: `tableau.extensions.1.11.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api).) <br/>
 
-* Certain features in this release are only available in Tableau 2024.1 or later. Download [Tableau Desktop](https://www.tableau.com/support/releases). or [Tableau Server](https://www.tableau.com/support/releases/server).
+* Certain features in this release are only available in Tableau 2024.1 or later. Download [Tableau Desktop](https://www.tableau.com/support/releases) or [Tableau Server](https://www.tableau.com/support/releases/server).
 
-* To preview new features and test your extension with the latest version of Tableau in the Developer Sandbox, join the [Tableau Developer Program](http://www.tableau.com/developer). and request your own Tableau Cloud developer site.
+* To preview new features and test your extension with the latest version of Tableau in the Developer Sandbox, join the [Tableau Developer Program](http://www.tableau.com/developer) and request your own Tableau Cloud developer site.
 
 About this release:
 
@@ -170,7 +170,7 @@ About this release:
 
     The Viz Extensions API is currently under development. Tableau is working to offer the feature in general availability later in 2024.
 
-    We encourage anyone interested in developing viz extensions to contact Wilson Po at [wpo@salesforce.com](mailto:wpo@salesforce.com). We’re running a program by invitation that focuses on the developer experience for those interested in exploring those tools. An active NDA must be in place to requests access to the preview at this time.
+    We encourage anyone interested in developing viz extensions to contact Wilson Po at [wpo@salesforce.com](mailto:wpo@salesforce.com). We’re running a program by invitation that focuses on the developer experience for those interested in exploring those tools. An active NDA must be in place to request access to the preview at this time.
 
     Sign up to test Tableau Viz Extensions in the [Tableau Beta Preview](https://prerelease.tableau.com/welcome/), as part of the web authoring experience when you register for a Tableau Cloud Beta Site.
 
@@ -180,15 +180,15 @@ About this release:
 
 *December 2022*
 
-* Tableau Dashboard Extensions API library: `tableau.extensions.1.10.0.js` <br/>(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api)..) <br/>
+* Tableau Dashboard Extensions API library: `tableau.extensions.1.10.0.js` <br/>(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api).) <br/>
 
-* Certain features in this release are only available in Tableau 2022.4 or later. Download [Tableau Desktop](https://www.tableau.com/support/releases). or [Tableau Server](https://www.tableau.com/support/releases/server).
+* Certain features in this release are only available in Tableau 2022.4 or later. Download [Tableau Desktop](https://www.tableau.com/support/releases) or [Tableau Server](https://www.tableau.com/support/releases/server).
 
-* To preview new features and test your extension with the latest version of Tableau in the Developer Sandbox, join the [Tableau Developer Program](http://www.tableau.com/developer). and request your own Tableau Cloud developer site.
+* To preview new features and test your extension with the latest version of Tableau in the Developer Sandbox, join the [Tableau Developer Program](http://www.tableau.com/developer) and request your own Tableau Cloud developer site.
 
 About this release:
 
-* Updates for Tableau Viz, an easy way for you to add visualizations to your dashboard extensions using a declarative description. This release includes support for combination charts, charts with multiple mark types in the same visualization. Tableau Viz has a new input specification that support these new visualizations, see the [Tableau Viz v2 inputSpec](./trex_tableau_viz_ref_v2.md). For information about using Tableau Viz in your extensions, see [Add Tableau Viz to your Dashboard Extensions](./core/trex_tableau_viz.md).
+* Updates for Tableau Viz, an easy way for you to add visualizations to your dashboard extensions using a declarative description. This release includes support for combination charts, charts with multiple mark types in the same visualization. Tableau Viz has a new input specification that supports these new visualizations, see the [Tableau Viz v2 inputSpec](./trex_tableau_viz_ref_v2.md). For information about using Tableau Viz in your extensions, see [Add Tableau Viz to your Dashboard Extensions](./core/trex_tableau_viz.md).
 
     ![Tableau Viz v2 SVG image](./assets/vizapiV2.svg)
 
@@ -210,7 +210,7 @@ For more information, see [Get Data from the View](./core/trex_getdata.md).
 
 *June 2022*
 
-* Tableau Dashboard Extensions API library: `tableau.extensions.1.9.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api)..) <br/>
+* Tableau Dashboard Extensions API library: `tableau.extensions.1.9.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api).) <br/>
 
 * Download [Tableau Desktop](https://www.tableau.com/support/releases) or [Tableau Server](https://www.tableau.com/support/releases/server).
 
@@ -239,11 +239,11 @@ About this release:
 
 *February 2022*
 
-* Tableau Dashboard Extensions API library: `tableau.extensions.1.8.1.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api)..) <br/>
+* Tableau Dashboard Extensions API library: `tableau.extensions.1.8.1.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api).) <br/>
 
-* Download [Tableau Desktop 2021.4](https://www.tableau.com/support/releases). or [Tableau Server 2021.4](https://www.tableau.com/support/releases/server)..
+* Download [Tableau Desktop 2021.4](https://www.tableau.com/support/releases) or [Tableau Server 2021.4](https://www.tableau.com/support/releases/server).
 
-* To preview new features and test your extension with the latest version of Tableau in the Developer Sandbox, join the [Tableau Developer Program](http://www.tableau.com/developer). and request your own Tableau Cloud developer site.
+* To preview new features and test your extension with the latest version of Tableau in the Developer Sandbox, join the [Tableau Developer Program](http://www.tableau.com/developer) and request your own Tableau Cloud developer site.
 
 About this release:
 
@@ -260,9 +260,9 @@ About this release:
 
 *November 2021*
 
-* Tableau Dashboard Extensions API library: `tableau.extensions.1.8.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api)..) <br/>
+* Tableau Dashboard Extensions API library: `tableau.extensions.1.8.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api).) <br/>
 
-* Certain features in this release are only available in Tableau 2021.4 or later. Preview the features and test your extension with the latest version of Tableau in the Developer Sandbox. To gain access to the Developer Sandbox, join the [Tableau Developer Program](http://www.tableau.com/developer). and request your own Tableau Cloud developer site.
+* Certain features in this release are only available in Tableau 2021.4 or later. Preview the features and test your extension with the latest version of Tableau in the Developer Sandbox. To gain access to the Developer Sandbox, join the [Tableau Developer Program](http://www.tableau.com/developer) and request your own Tableau Cloud developer site.
 
 About this release:
 
@@ -308,17 +308,17 @@ For more information, see [Tableau Viz Reference](./trex_tableau_viz_ref.md).
 *October 2021*
 
 
-* Tableau Dashboard Extensions API library: `tableau.extensions.1.7.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api)..) <br/>
+* Tableau Dashboard Extensions API library: `tableau.extensions.1.7.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api).) <br/>
 
-* Certain features in this release are only available in Tableau 2021.4 or later. Preview the features and test your extension with the latest version of Tableau in the Developer Sandbox. To gain access to the Developer Sandbox, join the [Tableau Developer Program](http://www.tableau.com/developer). and request your own Tableau Cloud developer site.
+* Certain features in this release are only available in Tableau 2021.4 or later. Preview the features and test your extension with the latest version of Tableau in the Developer Sandbox. To gain access to the Developer Sandbox, join the [Tableau Developer Program](http://www.tableau.com/developer) and request your own Tableau Cloud developer site.
 
 About this release:
 
 * Added a new method, [`moveAndResizeDashboardObjectsAsync`](pathname:///api/interfaces/dashboard.html#dashboard.html#moveandresizedashboardobjectsasync). you can use to set the position and size of one or more floating dashboard objects. This can be useful for creating overlays, annotations, popups, or dynamic layouts.
   
-* Added a new method that can replay an animation in a dashboard. You can control the replay speed (`tableau.ReplaySpeedType.Slow`, `tableau.ReplaySpeedType.Normal`, or `tableau.ReplaySpeedType.Fast`). For more information see the [`replayAnimationAsync`](pathname:///api/interfaces/dashboard.html#replayanimationasync). method.
+* Added a new method that can replay an animation in a dashboard. You can control the replay speed (`tableau.ReplaySpeedType.Slow`, `tableau.ReplaySpeedType.Normal`, or `tableau.ReplaySpeedType.Fast`). For more information, see the [`replayAnimationAsync`](pathname:///api/interfaces/dashboard.html#replayanimationasync) method.
 
-* Dashboard extensions can now use workbook formatting by setting the appropriate class on the HTML elements. The specific Tableau classes to use are defined in the [`ClassNameKey`](pathname:///api/enums/tableau.classnamekey.html). enum. To apply the formatting in the body of your HTML page, use the string literal `tableau-*` for the enum. For example, to apply the worksheet title formatting you set the `class` for the HTML element in your extension (`div`, `h2`, etc.) to `"tableau-worksheet-title"`.  
+* Dashboard extensions can now use workbook formatting by setting the appropriate class on the HTML elements. The specific Tableau classes to use are defined in the [`ClassNameKey`](pathname:///api/enums/tableau.classnamekey.html) enum. To apply the formatting in the body of your HTML page, use the string literal `tableau-*` for the enum. For example, to apply the worksheet title formatting you set the `class` for the HTML element in your extension (`div`, `h2`, etc.) to `"tableau-worksheet-title"`.  
 
      ```html
      <h2 class="tableau-worksheet-title">Subheader, using tableau-worksheet-title class</h2>
@@ -335,7 +335,7 @@ About this release:
     </script>
     ```
 
-  You can access the formatting in the Tableau workbook from `tableau.extensions.environment.workbookFormatting`. The property `formattingSheets` contains the array of CSS properties for the workbook, organized by `ClassNameKey`. For more information about using workbook formatting, see the [Formatting](https://github.com/tableau/extensions-api/tree/main/Samples/Dashboard/Formatting). sample in the Samples folder. Also see [Add Tableau Workbook Formatting](./core/trex_format.md).
+  You can access the formatting in the Tableau workbook from `tableau.extensions.environment.workbookFormatting`. The property `formattingSheets` contains the array of CSS properties for the workbook, organized by `ClassNameKey`. For more information about using workbook formatting, see the [Formatting](https://github.com/tableau/extensions-api/tree/main/Samples/Dashboard/Formatting) sample in the Samples folder. Also see [Add Tableau Workbook Formatting](./core/trex_format.md).
 
 * You can now set an event listener on changes to the dashboard layout and to the dashboard formatting. The new event types are `DashboardLayoutChanged` and `WorkbookFormattingChanged`. 
 
@@ -345,7 +345,7 @@ About this release:
 
 * Transparency - Tableau now supports dashboard extension transparency for Sandboxed extensions. To take advantage of extension transparency, set your background style to a transparent or partially transparent color.
 
-* Added a new method (`setClickThroughAsync`) that allows clicks to pass through the dashboard extension window. You can use this method in conjunction with transparency. See the [setClickThroughAsync](pathname:///api/interfaces/extensions.html#setclickthroughasync). method.
+* Added a new method (`setClickThroughAsync`) that allows clicks to pass through the dashboard extension window. You can use this method in conjunction with transparency. See the [setClickThroughAsync](pathname:///api/interfaces/extensions.html#setclickthroughasync) method.
 
 
 
@@ -357,9 +357,9 @@ About this release:
 
 *September 2021*
 
-* Tableau Dashboard Extensions API library: `tableau.extensions.1.6.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api)..) <br/>
+* Tableau Dashboard Extensions API library: `tableau.extensions.1.6.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api).) <br/>
 
-* Download [Tableau Desktop 2021.3](https://www.tableau.com/support/releases). or [Tableau Server 2021.3](https://www.tableau.com/support/releases/server)..
+* Download [Tableau Desktop 2021.3](https://www.tableau.com/support/releases) or [Tableau Server 2021.3](https://www.tableau.com/support/releases/server).
 
 About this release:
 
@@ -367,7 +367,7 @@ About this release:
 
 ![Tableau Viz SVG image](./assets/vizapi_demo3.svg)
 
-Starting with version 1.6 of the Dashboard Extensions API library and Tableau 2021.3, you can now add Tableau visualizations to your dashboard extensions. Tableau Viz takes a declarative description of your visualization and renders it as an SVG image that you can embed in your extension.  Version 1.6 of the Dashboard Extensions library adds the [`tableau.extensions.createVizImageAsync`](pathname:///api/interfaces/extensions.html#createvizimageasync). method, which takes a JavaScript object describing the image as an input.<br/> 
+Starting with version 1.6 of the Dashboard Extensions API library and Tableau 2021.3, you can now add Tableau visualizations to your dashboard extensions. Tableau Viz takes a declarative description of your visualization and renders it as an SVG image that you can embed in your extension.  Version 1.6 of the Dashboard Extensions library adds the [`tableau.extensions.createVizImageAsync`](pathname:///api/interfaces/extensions.html#createvizimageasync) method, which takes a JavaScript object describing the image as an input.<br/> 
 For more information about using Tableau Viz, see: <br/>
   - [Add Tableau Viz to Your Dashboard Extensions](./core/trex_tableau_viz.md)
   - [Tableau Viz Reference](./trex_tableau_viz_ref.md)
@@ -384,7 +384,7 @@ New Dashboard Extension API methods in this release:
 
 *June 2021*
 
-* Tableau Dashboard Extensions API library: `tableau.extensions.1.5.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api)..) <br/>
+* Tableau Dashboard Extensions API library: `tableau.extensions.1.5.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api).) <br/>
 
 About this release:
 
@@ -394,7 +394,7 @@ About this release:
 
 * The `selectMarksByValueAsync` method now supports combined selection criteria types (bug fixed).
 
-* The following are all improvements to the [`getSummaryDataAsync`](pathname:///api/interfaces/worksheet.html#getsummarydataasync). method:
+* The following are all improvements to the [`getSummaryDataAsync`](pathname:///api/interfaces/worksheet.html#getsummarydataasync) method:
 
   * `getSummaryDataAsync` now has a smaller and faster payload.
 
@@ -408,7 +408,7 @@ About this release:
 
 * The column information now includes the `fieldId` as well as the field name.
 
-For more information about changes in this release, see [Tableau Extensions v1.5.0](https://github.com/tableau/extensions-api/releases/tag/v1.5.0)..
+For more information about changes in this release, see [Tableau Extensions v1.5.0](https://github.com/tableau/extensions-api/releases/tag/v1.5.0).
 
 
 
@@ -506,9 +506,10 @@ About this release:
 
 About this release:
 
-* The Extensions API library version 1.2 (`tableau.extensions.1.2.0.js`) is backward compatible with previous releases of the library. You can use the Extensions API library version 1.2 for extensions on Tableau 2018.2 and later. The library contains logic to handle any necessary conversions for the supported version of Tableau the extension is running in. For the best experience, you should always use the latest version of the library with the extensions you create. 
+* The Extensions API library version 1.2 (`tableau.extensions.1.2.0.js`) is backward compatible with previous releases of the library. You can use the Extensions API library version 1.2 for extensions on Tableau 2018.2 and later. The library contains logic to handle any necessary conversions for the supported version of Tableau the extension is running in. For the best experience, you should always use the latest version of the library with the extensions you create.
 
-* The names of the Extension API library files have changed. The hypens (-) have been removed from the file name (was `tableau-extensions-*`, now `tableau.extensions.*`). Starting with the 1.2 library, the names of the library files are as follows: 
+* The names of the Extension API library files have changed. The hyphens (-) have been removed from the file name (was `tableau-extensions-*`, now `tableau.extensions.*`). Starting with the 1.2 library, the names of the library files are as follows:
+
 ```
 tableau.extensions.1.2.0.js
 tableau.extensions.1.2.0.min.js
@@ -535,15 +536,13 @@ Bugs fixed in this release:
 
 * Tableau Extensions API library: `tableau-extensions-1.1.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api).) <br/>
 
-* Download [Tableau Desktop 2019.1](https://www.tableau.com/support/releases). or [Tableau Server 2019.1](https://www.tableau.com/support/releases/server).
+* Download [Tableau Desktop 2019.1](https://www.tableau.com/support/releases) or [Tableau Server 2019.1](https://www.tableau.com/support/releases/server).
 
 Changes in this release: 
 
 * Upgrade to the Chromium browser, which allows modern web technologies to be used with dashboard extensions (HTML 5, CSS, native ES6 support). Tableau 2019.1 now uses Qt 5.10, The Qt WebEngine is based upon Chromium 61.0.3163.99, with additional security fixes from newer versions. With this update, you no longer need to download and use a specific version of Chromium (47.0.2526.0) to debug dashboard extensions on Tableau Desktop. You can now debug extensions in Tableau Desktop using Chrome. 
 
 * Show and hide capabilities for extensions (now you see it, now you don't). For more information, see [Show and Hide Objects in the Dashboard](./core/trex_show_hide.md).
-
-
 
 
 
@@ -576,7 +575,7 @@ Bugs fixed in this release:
 
 - Tableau Extensions API library: `tableau-extensions-1.0.0.js` *No change for this release*<br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api).)
 
-- Download [Tableau Desktop 2018.3](https://www.tableau.com/support/releases). or [Tableau Server 2018.3](https://www.tableau.com/support/releases/server).
+- Download [Tableau Desktop 2018.3](https://www.tableau.com/support/releases) or [Tableau Server 2018.3](https://www.tableau.com/support/releases/server).
 
 
 
@@ -596,17 +595,17 @@ New in this release:
 New in this release: 
 
 
-- Use the [Design Guidelines for Dashboard Extensions](./ux_design.md). as a roadmap for designing great dashboard extensions. 
+- Use the [Design Guidelines for Dashboard Extensions](./ux_design.md) as a roadmap for designing great dashboard extensions.
 
 
-- Create extensions with the look-and-feel of Tableau, using the [Tableau UI](https://tableau.github.io/tableau-ui/.md)., a React component library.  
+- Create extensions with the look-and-feel of Tableau, using the [Tableau UI](https://tableau.github.io/tableau-ui/.md), a React component library.  
 
 - New and updated documentation. See [Publishing a Dashboard Extension](./publish/trex_publish.md). <br/>
 For information about developing and running an extension locally on `http://localhost` and testing it on Tableau Cloud or Tableau Server (over HTTPS), see [Load and view localhost content on sites that use secure connections](./security/trex_security.md#load-and-view-localhost-content-on-sites-that-use-secure-connections).
 
 Bugs fixed in this release:
 
-- Extensions are now fully supported in Internet Explorer (IE 11). 
+- Extensions are now fully supported in Internet Explorer (IE 11).
 
 ---
 
@@ -617,7 +616,7 @@ Release of the Tableau Extensions API
 
 - Tableau Extensions API library: `tableau-extensions-1.0.0.js` <br />
   (download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api).)
-- Download [Tableau Desktop 2018.2](https://www.tableau.com/support/releases). or [Tableau Server 2018.2](https://www.tableau.com/support/releases/server).
+- Download [Tableau Desktop 2018.2](https://www.tableau.com/support/releases) or [Tableau Server 2018.2](https://www.tableau.com/support/releases/server).
  
  Bugs fixed in this release:
 
@@ -961,13 +960,13 @@ For information about debugging extensions, see [Remote Debugging of JavaScript 
 **Breaking change**
 
 - Schema change - Updated XSD file for the dashboard extensions manifest file (`.trex`). 
-  If you have an existing extension, you must update the `.trex` file to follow the new schema. There is a script you can run that converts the manifest file for you. Or you can manually make the changes. For more information about the manifest, see [Tableau Extension Manifest File](./dashext/trex_manifest.md). You can download the manifest conversion script from the **Extensions API Developer Preview** on [https://prerelease.tableau.com](https://prerelease.tableau.com)..
+  If you have an existing extension, you must update the `.trex` file to follow the new schema. There is a script you can run that converts the manifest file for you. Or you can manually make the changes. For more information about the manifest, see [Tableau Extension Manifest File](./dashext/trex_manifest.md). You can download the manifest conversion script from the **Extensions API Developer Preview** on [https://prerelease.tableau.com](https://prerelease.tableau.com).
 - Existing workbooks - if you have an existing workbook that uses a dashboard extension, you will not be able to open it with this (`0.7.0`) release. To get around this issue, update the manifest file (`.trex`), update your extension to use `tableau-extensions-0.7.0.js`, and then open a new workbook and re-create the dashboard.  
 
 
 **New features**  
 
--	Tableau Server.  You can publish dashboards containing extensions and run them on Tableau Server. You can download a version of Tableau Server 10.5 that supports dashboard extensions from the **Extensions API Developer Preview** on [https://prerelease.tableau.com](https://prerelease.tableau.com)..
+-	Tableau Server.  You can publish dashboards containing extensions and run them on Tableau Server. You can download a version of Tableau Server 10.5 that supports dashboard extensions from the **Extensions API Developer Preview** on [https://prerelease.tableau.com](https://prerelease.tableau.com).
 -  Security - Your dashboard extension must use an HTTPS connection. If you are using `localhost` for development, you can still use HTTP. 
 - Sharing dashboards  -  the dashboard extension now gets saved with the workbook, so you can share your workbooks that use the extension with others. 
 -	New method `DataSource.getConnectionSummariesAsync`  gets a summary object for each underlying connection in a data source.
