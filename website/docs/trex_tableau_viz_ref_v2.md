@@ -23,7 +23,7 @@ createVizImageAsync( inputSpec:  *object* ): Promise<string>
 ```
 
 This method takes a single argument, the `inputSpec`, a JavaScript object, and returns the SVG description of that image. To call this method, you first initialize the Dashboard Extensions API (`tableau.extensions.initialize()`). You then create the `inputSpec` object that defines your graphic.
-For more information about the method, see [`tableau.extensions.createVizImageAsync`](pathname:///api/interfaces/extensions.html#createvizimageasync) in the Dashboard Extensions API reference.
+For more information about the method, see [`tableau.extensions.createVizImageAsync`](pathname:///api/interfaces/Extensions.html#createvizimageasync) in the Dashboard Extensions API reference.
 
 ---
 
