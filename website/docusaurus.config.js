@@ -87,7 +87,7 @@ const getConfig = async () => {
               label: 'Guides',
             },
             {
-              to: 'pathname:///api',
+              to: 'pathname:///api/',
               label: 'API Reference',
             },
             {
@@ -146,7 +146,7 @@ const getConfig = async () => {
                 },
                 {
                   label: 'API Reference',
-                  to: 'pathname:///api',
+                  to: 'pathname:///api/',
                 },
                 {
                 label: 'UX Design Guide',

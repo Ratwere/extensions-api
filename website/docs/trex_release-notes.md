@@ -8,6 +8,35 @@ description: What's new for each release of the Tableau Extensions API
 
 ---
 
+### Tableau Extensions API version 1.17.0
+
+*June 2026*
+
+* Tableau Dashboard Extensions API library: `tableau.extensions.1.17.0.js` <br />(download or clone the Extensions API repository on [GitHub](https://github.com/tableau/extensions-api)). <br />
+
+* Certain features in this release are only available in Tableau Cloud, Tableau Server, and Tableau Desktop 2026.2 or later. Download [Tableau Desktop](https://www.tableau.com/support/releases).
+
+What's new in this release:
+
+* Added `DataRole` and `SemanticRole` properties for fields returned in results from the `Worksheet.getVisualSpecificationAsync` method.
+
+* Added `WorkbookLocale` to `Environment`.
+
+* Added support for exporting extensions on Tableau Cloud and Server platforms.
+
+  * Added the `reportExtensionRenderComplete` method to `Extensions`, which can be called by an extension to indicate that it is ready for exporting.
+
+  * Added the `ExportedMediaType` enum property to `Environment`, which indicates the media type an
+extension is being exported as.
+
+  * Added the `isExporting` property to `Environment` which indicates if the extension is currently
+being exported.
+
+---
+
+## Previous Releases
+
+
 ### Tableau Extensions API version 1.16.0
 
 *February 2026*
@@ -22,13 +51,10 @@ What's new in this release:
 
 * Added support for multiple dialogs. In addition to the configuration popup window, you can add other dialog boxes or popup windows that can interact with the extension. See [Add Multiple Dialog Boxes](./core/trex_multiple_dialogs.md).
 
-* Added the [sendDialogMessageAsync](pathname:///api/interfaces/ui.html#senddialogmessageasync) and the [sendDialogMessageToParentAsync](pathname:///api/interfaces/ui.html#senddialogmessagetoparentasync) methods to the UI namespace. Use the `sendDialogMessageAsync` method to send messages between any two dialog boxes, or between any dialog box and the extension. Use the `sendDialogMessageToParentAsync` method to send a message from the dialog box to the extension or to the dialog box (the parent) that opened it. See [Send messages between popup dialog boxes and the extension](core/trex_multiple_dialogs#send-messages-between-popup-dialog-boxes-and-the-extension).
-
+* Added the [sendDialogMessageAsync](pathname:///api/interfaces/UI.html#senddialogmessageasync) and the [sendDialogMessageToParentAsync](pathname:///api/interfaces/UI.html#senddialogmessagetoparentasync) methods to the UI namespace. Use the `sendDialogMessageAsync` method to send messages between any two dialog boxes, or between any dialog box and the extension. Use the `sendDialogMessageToParentAsync` method to send a message from the dialog box to the extension or to the dialog box (the parent) that opened it. See [Send messages between popup dialog boxes and the extension](core/trex_multiple_dialogs#send-messages-between-popup-dialog-boxes-and-the-extension).
 
 
 ---
-
-## Previous Releases
 
 ### Tableau Extensions API version 1.15.0
 
@@ -66,7 +92,7 @@ For more information, see [Debug Extensions in Tableau Desktop](./debug/trex_deb
 
 What's new in this release:
 
-* Added `hasAlias` and `aliasValue` attributes to [DataValue](pathname:///api/interfaces/datavalue.html).
+* Added `hasAlias` and `aliasValue` attributes to [DataValue](pathname:///api/interfaces/DataValue.html).
 
 * Fixed a bug that caused an error when calling the `getAllDataSourcesAsync` method on a workbook with no worksheets.
 
@@ -86,11 +112,11 @@ What's new in this release:
 
 What's new in this release:
 
-* (Viz Extensions) Added the [`WorksheetFormattingChanged`](pathname:///api/interfaces/worksheetformattingchangedevent.html) event to the [`worksheet`](pathname:///api/interfaces/worksheet.html). Use this event to take action whenever the worksheet's formatting changes. Note that this event is also raised when the workbook's formatting changes.
+* (Viz Extensions) Added the [`WorksheetFormattingChanged`](pathname:///api/interfaces/WorksheetFormattingChangedEvent.html) event to the [`worksheet`](pathname:///api/interfaces/Worksheet.html). Use this event to take action whenever the worksheet's formatting changes. Note that this event is also raised when the workbook's formatting changes.
 
-* Added [`backgroundColor`](pathname:///api/interfaces/worksheet.html#backgroundcolor) and [`formatting`](pathname:///api/interfaces/worksheet.html#formatting) properties to the [`worksheet`](pathname:///api/interfaces/worksheet.html). These properties return the background color and formatting of the worksheet (that is, the formatting sheets that contain the CSS properties).
+* Added [`backgroundColor`](pathname:///api/interfaces/Worksheet.html#backgroundcolor) and [`formatting`](pathname:///api/interfaces/Worksheet.html#formatting) properties to the [`worksheet`](pathname:///api/interfaces/Worksheet.html). These properties return the background color and formatting of the worksheet (that is, the formatting sheets that contain the CSS properties).
 
-* Added `applyWorksheetFormatting` as a property of [`GetSummaryDataOptions`](pathname:///api/interfaces/getsummarydataoptions.html#applyworksheetformatting) and [`GetUnderlyingDataOptions`](pathname:///api/interfaces/getunderlyingdataoptions.html#applyworksheetformatting). This property specifies whether to apply worksheet-level formatting to numbers and dates. You can use this option with the get summary and get underlying data APIs (such as, [`getSummaryDataReaderAsync`](pathname:///api/interfaces/worksheet.html#getsummarydatareaderasync), [`getUnderlyingTableDataReaderAsync`](pathname:///api/interfaces/worksheet.html#getunderlyingtabledatareaderasync)).
+* Added `applyWorksheetFormatting` as a property of [`GetSummaryDataOptions`](pathname:///api/interfaces/GetSummaryDataOptions.html#applyworksheetformatting) and [`GetUnderlyingDataOptions`](pathname:///api/interfaces/GetUnderlyingDataOptions.html#applyworksheetformatting). This property specifies whether to apply worksheet-level formatting to numbers and dates. You can use this option with the get summary and get underlying data APIs (such as, [`getSummaryDataReaderAsync`](pathname:///api/interfaces/Worksheet.html#getsummarydatareaderasync), [`getUnderlyingTableDataReaderAsync`](pathname:///api/interfaces/Worksheet.html#getunderlyingtabledatareaderasync)).
 
 
 
@@ -109,12 +135,12 @@ What's new in this release:
 
 * Support for Viz Extensions. Viz Extensions is a new feature that allows developers to create new viz types that Tableau users can access through the worksheet Marks card. See [Getting Started with Viz Extensions](./vizext/trex_viz_getstarted.md).
 
-* Updated the [`Worksheet.selectTuplesAsync`](pathname:///api/interfaces/worksheet.html#selecttuplesasync) method to now support multiple tuple values. This means you can enable multi-selection scenarios. For example, the viz extension can support mark selection for rectangular, lasso, or other shaped multi-mark selections. You can use this method for marks or zones that represent multiple values.
+* Updated the [`Worksheet.selectTuplesAsync`](pathname:///api/interfaces/Worksheet.html#selecttuplesasync) method to now support multiple tuple values. This means you can enable multi-selection scenarios. For example, the viz extension can support mark selection for rectangular, lasso, or other shaped multi-mark selections. You can use this method for marks or zones that represent multiple values.
 
 * Added [Keyboard Accessible](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html) navigation methods.
-  * You can use the [`Worksheet.getTooltipTextAsync`](pathname:///api/interfaces/worksheet.html#gettooltiptextasync) method to grab the data of the navigated tuple to read out to a screen reader.
+  * You can use the [`Worksheet.getTooltipTextAsync`](pathname:///api/interfaces/Worksheet.html#gettooltiptextasync) method to grab the data of the navigated tuple to read out to a screen reader.
 
-  * Use the [`Worksheet.leaveMarkNavigationAsync`](pathname:///api/interfaces/worksheet.html#leavemarknavigationasync) method to escape focus back over to Tableau when you're done with mark navigation.
+  * Use the [`Worksheet.leaveMarkNavigationAsync`](pathname:///api/interfaces/Worksheet.html#leavemarknavigationasync) method to escape focus back over to Tableau when you're done with mark navigation.
 
 * (Viz Extensions) You can now specify the encoding icons used on the Marks card and provide for localization. You set these options in the `.trex` manifest file. See [Add encoding to the viz manifest](./vizext/trex_viz_manifest.md#add-encoding-in-the-viz-manifest).
 
@@ -130,9 +156,9 @@ What's new in this release:
 
 * Added support for interactivity in viz extensions. You can add actions and tooltips based on marks selection or hover over interactions. This release includes two new `worksheet` methods.
 
-    * Use the [`Worksheet.selectTuplesAsync`](pathname:///api/interfaces/worksheet.html#selecttuplesasync) method to display the Tableau tooltip for the selected marks, or to take some other action based upon the marks selection.
+    * Use the [`Worksheet.selectTuplesAsync`](pathname:///api/interfaces/Worksheet.html#selecttuplesasync) method to display the Tableau tooltip for the selected marks, or to take some other action based upon the marks selection.
 
-    * Use the [`Worksheet.hoverTupleAsync`](pathname:///api/interfaces/worksheet.html#hovertupleasync) method to display a tooltip for the marks currently hovered over.
+    * Use the [`Worksheet.hoverTupleAsync`](pathname:///api/interfaces/Worksheet.html#hovertupleasync) method to display a tooltip for the marks currently hovered over.
 
     For an example of how you can use these methods, see the [Sankey](https://github.com/tableau/extensions-api/tree/main/Samples/Viz/Sankey?=target="_blank") viz extension sample.
 
@@ -194,15 +220,15 @@ About this release:
 
 ----
 
-* Adds support for a [DataTableReader](pathname:///api/interfaces/datatablereader.html) to support pagination. Created with [Worksheet.getSummaryDataReaderAsync](pathname:///api/interfaces/worksheet.html#getsummarydatareaderasync),
-[Worksheet.getUnderlyingTableDataReaderAsync](pathname:///api/interfaces/worksheet.html#getunderlyingtabledatareaderasync), and [DataSource.getLogicalTableDataReaderAsync](pathname:///api/interfaces/datasource.html#getlogicaltabledatareaderasync).
+* Adds support for a [DataTableReader](pathname:///api/interfaces/DataTableReader.html) to support pagination. Created with [Worksheet.getSummaryDataReaderAsync](pathname:///api/interfaces/Worksheet.html#getsummarydatareaderasync),
+[Worksheet.getUnderlyingTableDataReaderAsync](pathname:///api/interfaces/Worksheet.html#getunderlyingtabledatareaderasync), and [DataSource.getLogicalTableDataReaderAsync](pathname:///api/interfaces/DataSource.html#getlogicaltabledatareaderasync).
 For more information, see [Get Data from the View](./core/trex_getdata.md).
 
-* Deprecated `getSummaryDataAsync`. Use [Worksheet.getSummaryDataReaderAsync](pathname:///api/interfaces/worksheet.html#getsummarydatareaderasync) instead.
+* Deprecated `getSummaryDataAsync`. Use [Worksheet.getSummaryDataReaderAsync](pathname:///api/interfaces/Worksheet.html#getsummarydatareaderasync) instead.
 
-* The [UI.displayDialogAsync](pathname:///api/interfaces/ui.html#displaydialogasync) now supports different dialog styles (window, modal or modeless dialog boxes).
+* The [UI.displayDialogAsync](pathname:///api/interfaces/UI.html#displaydialogasync) now supports different dialog styles (window, modal or modeless dialog boxes).
 
-* Adds support for annotating marks with [Worksheet.annotateMarkAsync](pathname:///api/interfaces/worksheet.html#annotatemarkasync), [Worksheet.getAnnotationsAsync](pathname:///api/interfaces/worksheet.html#getannotationsasync), and [Worksheet.removeAnnotationAsync](pathname:///api/interfaces/worksheet.html#removeannotationasync). See the code sample, [Annotation](https://github.com/tableau/extensions-api/tree/dev/Samples/Dashboard/Annotation) (on GitHub).
+* Adds support for annotating marks with [Worksheet.annotateMarkAsync](pathname:///api/interfaces/Worksheet.html#annotatemarkasync), [Worksheet.getAnnotationsAsync](pathname:///api/interfaces/Worksheet.html#getannotationsasync), and [Worksheet.removeAnnotationAsync](pathname:///api/interfaces/Worksheet.html#removeannotationasync). See the code sample, [Annotation](https://github.com/tableau/extensions-api/tree/dev/Samples/Dashboard/Annotation) (on GitHub).
 
 ---
 
@@ -218,11 +244,11 @@ For more information, see [Get Data from the View](./core/trex_getdata.md).
 
 About this release:
 
-* Added support for [`Filter.getAppliedWorksheets()`](pathname:///api//interfaces/filter.html#getappliedworksheetsasync) and [`Filter.setAppliedWorksheets()`](pathname:///api/interfaces/filter.html#setappliedworksheetsasync).
+* Added support for [`Filter.getAppliedWorksheets()`](pathname:///api/interfaces/Filter.html#getappliedworksheetsasync) and [`Filter.setAppliedWorksheets()`](pathname:///api/interfaces/Filter.html#setappliedworksheetsasync).
 
-* Added support for [`Dashboard.getFiltersAsync()`](pathname:///api/interfaces/dashboard.html#getfiltersasync) and [`Dashboard.applyFilterAsync()`](pathname:///api/interfaces/dashboard.html#applyfilterasync).
+* Added support for [`Dashboard.getFiltersAsync()`](pathname:///api/interfaces/Dashboard.html#getfiltersasync) and [`Dashboard.applyFilterAsync()`](pathname:///api/interfaces/Dashboard.html#applyfilterasync).
 
-* Added support for [`Worksheet.applyRelativeDateFilterAsync()`](pathname:///api/interfaces/worksheet.html#applyrelativedatefilterasync).
+* Added support for [`Worksheet.applyRelativeDateFilterAsync()`](pathname:///api/interfaces/Worksheet.html#applyrelativedatefilterasync).
 
 * Starting with this release, you can now load Benton Sans fonts and Tableau fonts by default during extension initialization. You can set the Tableau and Benton Sans fonts in the style portion of your extension. To see how you can use the fonts in a dashboard extension, see the [Formatting](https://github.com/tableau/extensions-api/tree/master/Samples/Dashboard/Formatting?=target="_blank") sample.
 
@@ -314,11 +340,11 @@ For more information, see [Tableau Viz Reference](./trex_tableau_viz_ref.md).
 
 About this release:
 
-* Added a new method, [`moveAndResizeDashboardObjectsAsync`](pathname:///api/interfaces/dashboard.html#dashboard.html#moveandresizedashboardobjectsasync). you can use to set the position and size of one or more floating dashboard objects. This can be useful for creating overlays, annotations, popups, or dynamic layouts.
+* Added a new method, [`moveAndResizeDashboardObjectsAsync`](pathname:///api/interfaces/Dashboard.html#moveandresizedashboardobjectsasync). you can use to set the position and size of one or more floating dashboard objects. This can be useful for creating overlays, annotations, popups, or dynamic layouts.
   
-* Added a new method that can replay an animation in a dashboard. You can control the replay speed (`tableau.ReplaySpeedType.Slow`, `tableau.ReplaySpeedType.Normal`, or `tableau.ReplaySpeedType.Fast`). For more information, see the [`replayAnimationAsync`](pathname:///api/interfaces/dashboard.html#replayanimationasync) method.
+* Added a new method that can replay an animation in a dashboard. You can control the replay speed (`tableau.ReplaySpeedType.Slow`, `tableau.ReplaySpeedType.Normal`, or `tableau.ReplaySpeedType.Fast`). For more information, see the [`replayAnimationAsync`](pathname:///api/interfaces/Dashboard.html#replayanimationasync) method.
 
-* Dashboard extensions can now use workbook formatting by setting the appropriate class on the HTML elements. The specific Tableau classes to use are defined in the [`ClassNameKey`](pathname:///api/enums/tableau.classnamekey.html) enum. To apply the formatting in the body of your HTML page, use the string literal `tableau-*` for the enum. For example, to apply the worksheet title formatting you set the `class` for the HTML element in your extension (`div`, `h2`, etc.) to `"tableau-worksheet-title"`.  
+* Dashboard extensions can now use workbook formatting by setting the appropriate class on the HTML elements. The specific Tableau classes to use are defined in the [`ClassNameKey`](pathname:///api/enums/ClassNameKey.html) enum. To apply the formatting in the body of your HTML page, use the string literal `tableau-*` for the enum. For example, to apply the worksheet title formatting you set the `class` for the HTML element in your extension (`div`, `h2`, etc.) to `"tableau-worksheet-title"`.  
 
      ```html
      <h2 class="tableau-worksheet-title">Subheader, using tableau-worksheet-title class</h2>
@@ -339,13 +365,13 @@ About this release:
 
 * You can now set an event listener on changes to the dashboard layout and to the dashboard formatting. The new event types are `DashboardLayoutChanged` and `WorkbookFormattingChanged`. 
 
-  The `DashboardLayoutChanged` event is triggered whenever a dashboard object is added, removed, repositioned or resized, or whenever the floating state, visibility, object name, or dashboard size changes. See the [DashboardLayoutChanged](pathname:///api/interfaces/dashboard.html#dashboardlayoutchanged). event. 
+  The `DashboardLayoutChanged` event is triggered whenever a dashboard object is added, removed, repositioned or resized, or whenever the floating state, visibility, object name, or dashboard size changes. See the [DashboardLayoutChanged](pathname:///api/interfaces/Dashboard.html#dashboardlayoutchanged). event. 
 
-  The `WorkbookFormattingChanged` event is triggered whenever the workbook text formatting is changed in Tableau authoring mode. This includes changes in the font, the font size, whether it is bold, italic, or underlined, and the color. For more information about workbook formatting, see [workbookFormatting](pathname:///api/interfaces/environment.html#workbookformatting).
+  The `WorkbookFormattingChanged` event is triggered whenever the workbook text formatting is changed in Tableau authoring mode. This includes changes in the font, the font size, whether it is bold, italic, or underlined, and the color. For more information about workbook formatting, see [workbookFormatting](pathname:///api/interfaces/Environment.html#workbookformatting).
 
 * Transparency - Tableau now supports dashboard extension transparency for Sandboxed extensions. To take advantage of extension transparency, set your background style to a transparent or partially transparent color.
 
-* Added a new method (`setClickThroughAsync`) that allows clicks to pass through the dashboard extension window. You can use this method in conjunction with transparency. See the [setClickThroughAsync](pathname:///api/interfaces/extensions.html#setclickthroughasync) method.
+* Added a new method (`setClickThroughAsync`) that allows clicks to pass through the dashboard extension window. You can use this method in conjunction with transparency. See the [setClickThroughAsync](pathname:///api/interfaces/Extensions.html#setclickthroughasync) method.
 
 
 
@@ -367,7 +393,7 @@ About this release:
 
 ![Tableau Viz SVG image](./assets/vizapi_demo3.svg)
 
-Starting with version 1.6 of the Dashboard Extensions API library and Tableau 2021.3, you can now add Tableau visualizations to your dashboard extensions. Tableau Viz takes a declarative description of your visualization and renders it as an SVG image that you can embed in your extension.  Version 1.6 of the Dashboard Extensions library adds the [`tableau.extensions.createVizImageAsync`](pathname:///api/interfaces/extensions.html#createvizimageasync) method, which takes a JavaScript object describing the image as an input.<br/> 
+Starting with version 1.6 of the Dashboard Extensions API library and Tableau 2021.3, you can now add Tableau visualizations to your dashboard extensions. Tableau Viz takes a declarative description of your visualization and renders it as an SVG image that you can embed in your extension.  Version 1.6 of the Dashboard Extensions library adds the [`tableau.extensions.createVizImageAsync`](pathname:///api/interfaces/Extensions.html#createvizimageasync) method, which takes a JavaScript object describing the image as an input.<br/> 
 For more information about using Tableau Viz, see: <br/>
   - [Add Tableau Viz to Your Dashboard Extensions](./core/trex_tableau_viz.md)
   - [Tableau Viz Reference](./trex_tableau_viz_ref.md)
@@ -394,7 +420,7 @@ About this release:
 
 * The `selectMarksByValueAsync` method now supports combined selection criteria types (bug fixed).
 
-* The following are all improvements to the [`getSummaryDataAsync`](pathname:///api/interfaces/worksheet.html#getsummarydataasync) method:
+* The following are all improvements to the [`getSummaryDataAsync`](pathname:///api/interfaces/Worksheet.html#getsummarydataasync) method:
 
   * `getSummaryDataAsync` now has a smaller and faster payload.
 
@@ -448,7 +474,7 @@ About this release:
 
 * `DataValue` now has a `nativeValue` member. This member represents the raw native value as a JavaScript type, which is one of string, number, boolean, or Date object. Note that special values are returned as null. The `nativeValue` helps simplify error checking as all values will either be their native type value or null. The `nativeValue` exists for *ALL* `DataValue` objects, including those returned from parameters, filters, selections, and underlying or summary data. Dates values are in UTC.
 
-* Added documentation for the [clearSelectedMarksAsync()](pathname:///api/interfaces/worksheet.html#clearselectedmarksasync) method, which clears the selected marks in the current worksheet.
+* Added documentation for the [clearSelectedMarksAsync()](pathname:///api/interfaces/Worksheet.html#clearselectedmarksasync) method, which clears the selected marks in the current worksheet.
 
 Bugs fixed in this release:
 
@@ -526,7 +552,7 @@ Bugs fixed in this release:
 
 * The `environment.apiVersion` property now correctly reports the version of the Extensions API library that the extension is using.
 
-* The documentation for the <a href="pathname:///api/interfaces/worksheet#selectmarksbyvalueasync" target="_blank"><code>selectMarksByValueAsync</code></a> method has been corrected. If you are calling the method, be sure to specify the complete namespace for the `SelectionUpdateType` enum that is passed to the method as the `updateType` parameter.  For example, use `tableau.SelectionUpdateType.Replace`, to replace the currently selected marks with the values you specify in the method call.
+* The documentation for the <a href="pathname:///api/interfaces/Worksheet#selectmarksbyvalueasync" target="_blank"><code>selectMarksByValueAsync</code></a> method has been corrected. If you are calling the method, be sure to specify the complete namespace for the `SelectionUpdateType` enum that is passed to the method as the `updateType` parameter.  For example, use `tableau.SelectionUpdateType.Replace`, to replace the currently selected marks with the values you specify in the method call.
 
 ----
 
@@ -884,7 +910,7 @@ Error: internal-error: permission-denied: Missing required permission to run get
 Errors that are returned from the Extensions API are custom Tableau Error objects that extends the standard JavaScript error object.
 
 
-The Extensions API wraps the standard error object with an `errorCode` property. Any time you encounter an error when you are developing your extension, you can look at this `errorCode` to determine the cause. See [Error Codes](pathname:///api/enums/tableau.errorcodes.html).
+The Extensions API wraps the standard error object with an `errorCode` property. Any time you encounter an error when you are developing your extension, you can look at this `errorCode` to determine the cause. See [Error Codes](pathname:///api/enums/ErrorCodes.html).
 
 For an example of how to handle error conditions, see the [UINamespace](https://github.com/tableau/extensions-api/tree/main/Samples/Dashboard/UINamespace?=target="_blank") sample. The sample shows how you could handle the error condition that occurs if a user dismisses a modal dialog box (`DialogClosedByUser`).  The following snippet illustrates this pattern:
 

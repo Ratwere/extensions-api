@@ -1,570 +1,91 @@
-<!doctype html>
-<html class="default no-js">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DataSource | Tableau Extensions</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../assets/css/main.css">
-</head>
-<body>
-<header>
-	<div class="tsd-page-toolbar">
-		<div class="container">
-			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
-					<div class="field">
-						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
-						<input id="tsd-search-field" type="text" />
-					</div>
-					<ul class="results">
-						<li class="state loading">Preparing search index...</li>
-						<li class="state failure">The search index is not available</li>
-					</ul>
-					<a href="../index.html" class="title">Tableau Extensions</a>
-				</div>
-				<div class="table-cell" id="tsd-widgets">
-					<div id="tsd-filter">
-						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
-						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
-						</div>
-					</div>
-					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tsd-page-title">
-		<div class="container">
-			<ul class="tsd-breadcrumb">
-				<li>
-					<a href="../globals.html">Globals</a>
-				</li>
-				<li>
-					<a href="datasource.html">DataSource</a>
-				</li>
-			</ul>
-			<h1>Interface DataSource</h1>
-		</div>
-	</div>
-</header>
-<div class="container container-main">
-	<div class="row">
-		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Represents the data source used by a Worksheet.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">DataSource</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="datasource.html#extractupdatetime" class="tsd-kind-icon">extract<wbr>Update<wbr>Time</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="datasource.html#fields" class="tsd-kind-icon">fields</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="datasource.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="datasource.html#isextract" class="tsd-kind-icon">is<wbr>Extract</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="datasource.html#ispublished" class="tsd-kind-icon">is<wbr>Published</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="datasource.html#name" class="tsd-kind-icon">name</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="datasource.html#getactivetablesasync" class="tsd-kind-icon">get<wbr>Active<wbr>Tables<wbr>Async</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="datasource.html#getconnectionsummariesasync" class="tsd-kind-icon">get<wbr>Connection<wbr>Summaries<wbr>Async</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="datasource.html#getlogicaltabledataasync" class="tsd-kind-icon">get<wbr>Logical<wbr>Table<wbr>Data<wbr>Async</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="datasource.html#getlogicaltablesasync" class="tsd-kind-icon">get<wbr>Logical<wbr>Tables<wbr>Async</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="datasource.html#getunderlyingdataasync" class="tsd-kind-icon">get<wbr>Underlying<wbr>Data<wbr>Async</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="datasource.html#refreshasync" class="tsd-kind-icon">refresh<wbr>Async</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="extractupdatetime" class="tsd-anchor"></a>
-					<h3>extract<wbr>Update<wbr>Time</h3>
-					<div class="tsd-signature tsd-kind-icon">extract<wbr>Update<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:26</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>returns</dt>
-							<dd><p>Last update time of the data source&#39;s extract, or undefined if this data source is live.</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="fields" class="tsd-anchor"></a>
-					<h3>fields</h3>
-					<div class="tsd-signature tsd-kind-icon">fields<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="field.html" class="tsd-signature-type">Field</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:21</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>returns</dt>
-							<dd><p>An array of fields associated with this data source.</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:16</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>returns</dt>
-							<dd><p>Unique string representing this data source.</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="isextract" class="tsd-anchor"></a>
-					<h3>is<wbr>Extract</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Extract<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:31</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>returns</dt>
-							<dd><p>True if this data source is an extract, false otherwise.</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="ispublished" class="tsd-anchor"></a>
-					<h3>is<wbr>Published</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Published<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:37</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>returns</dt>
-							<dd><p>True if this data source is published to server, false otherwise. Always undefined prior to Tableau 2021.4.</p>
-							</dd>
-							<dt>since</dt>
-							<dd><p>1.7.0 and Tableau 2021.4</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:11</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>returns</dt>
-							<dd><p>The user friendly name of the data source as seen in the UI.</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getactivetablesasync" class="tsd-anchor"></a>
-					<h3>get<wbr>Active<wbr>Tables<wbr>Async</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Active<wbr>Tables<wbr>Async<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="tablesummary.html" class="tsd-signature-type">TableSummary</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:70</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>throws</dt>
-									<dd><p>UnsupportedMethodForDataSourceType error if this method is called on a Cube DataSource or GA.</p>
-									</dd>
-									<dt>deprecated</dt>
-									<dd><p>since version 1.4.0.  Use DataSource.getLogicalTablesAsync.</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="tablesummary.html" class="tsd-signature-type">TableSummary</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>An array of table summary objects that are currently used in the data source.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getconnectionsummariesasync" class="tsd-anchor"></a>
-					<h3>get<wbr>Connection<wbr>Summaries<wbr>Async</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Connection<wbr>Summaries<wbr>Async<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="connectionsummary.html" class="tsd-signature-type">ConnectionSummary</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:75</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="connectionsummary.html" class="tsd-signature-type">ConnectionSummary</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>An array of descriptions of the connections within this data source.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getlogicaltabledataasync" class="tsd-anchor"></a>
-					<h3>get<wbr>Logical<wbr>Table<wbr>Data<wbr>Async</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Logical<wbr>Table<wbr>Data<wbr>Async<span class="tsd-signature-symbol">(</span>logicalTableId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="datasourceunderlyingdataoptions.html" class="tsd-signature-type">DataSourceUnderlyingDataOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="datatable.html" class="tsd-signature-type">DataTable</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:147</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets the underlying data table for the given logical table id.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>see</dt>
-									<dd><p>getLogicalTableDataReaderAsync to read more than 10,000 rows.</p>
-										<p>You can use the <code>getUnderlyingDataOptions.maxRows</code> property to request the number of rows of data to return.
-											If unspecified (maxRows == &#39;0&#39;), the call to <code>getLogicalTableDataAsync</code> requests all rows in the logical table.
-											Note that the maximum number of rows returned from the <code>getLogicalTableDataAsync()</code> method is limited
-											to 10,000 rows. You can use the <code>DataTable</code> property, <code>isTotalRowCountLimited</code>, to test whether there is
-											more data. A value of true indicates that the calling function requested more rows than the limit (10,000) and the
-										underlying data source contains more rows than can be returned.</p>
-										<p>The following example shows use of the getLogicalTableDataAsync() method to get the data from a specific logical table in a data source.
-										The example uses the JavaScript find() method to select the workbook, and uses the getLogicalTablesAsync method to identify the logical table id.</p>
-										<pre><code><span class="hljs-keyword">const</span> dataSources = <span class="hljs-keyword">await</span> worksheet.getDataSourcesAsync();
-<span class="hljs-keyword">const</span> dataSource = dataSources.find(<span class="hljs-function"><span class="hljs-params">datasource</span> =&gt;</span> datasource.name === <span class="hljs-string">"Sample - Superstore"</span>);
-<span class="hljs-keyword">const</span> logicalTables = <span class="hljs-keyword">await</span> dataSource.getLogicalTablesAsync()
-<span class="hljs-keyword">const</span> dataTable = <span class="hljs-keyword">await</span> dataSource.getLogicalTableDataAsync(logicalTables[<span class="hljs-number">0</span>].id);
-<span class="hljs-built_in">console</span>.log(dataTable);</code></pre></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>logicalTableId: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="datasourceunderlyingdataoptions.html" class="tsd-signature-type">DataSourceUnderlyingDataOptions</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Collection of options to change the behavior of the call.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="datatable.html" class="tsd-signature-type">DataTable</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A data table containing the underlying data of the data source.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getlogicaltablesasync" class="tsd-anchor"></a>
-					<h3>get<wbr>Logical<wbr>Tables<wbr>Async</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Logical<wbr>Tables<wbr>Async<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="logicaltable.html" class="tsd-signature-type">LogicalTable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:120</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets the underlying logical tables used in the data source.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>since</dt>
-									<dd><p>1.4.0</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="logicaltable.html" class="tsd-signature-type">LogicalTable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>An array of logical tables that are currently used in the data source.</p>
-							<p>The following example uses the <code>getLogicalTablesAsync</code> method to print the names of the
-							the logical tables to the console.</p>
-							<pre><code>dataSource.getLogicalTablesAsync().<span class="hljs-keyword">then</span>(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(logicalTables)</span></span> {
-  // Loop through each <span class="hljs-built_in">table</span> that was used <span class="hljs-keyword">in</span> creating this data source
-  logicalTables.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(table)</span></span> {
-     console.<span class="hljs-built_in">log</span>(<span class="hljs-built_in">table</span>.caption);
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" data-domain-script="2d08f29e-0ede-4e8c-997c-f7ef5be8d4e7"></script><script type="text/javascript">function OptanonWrapper() {
+  window.addEventListener('load', function() {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'OneTrustGroupsUpdated' });
   });
-});</code></pre>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getunderlyingdataasync" class="tsd-anchor"></a>
-					<h3>get<wbr>Underlying<wbr>Data<wbr>Async</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Underlying<wbr>Data<wbr>Async<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="datasourceunderlyingdataoptions.html" class="tsd-signature-type">DataSourceUnderlyingDataOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="datatable.html" class="tsd-signature-type">DataTable</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:99</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>deprecated</dt>
-									<dd><p>Use DataSource.getLogicalTableDataReaderAsync or DataSource.getLogicalTableDataAsync.</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="datasourceunderlyingdataoptions.html" class="tsd-signature-type">DataSourceUnderlyingDataOptions</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Collection of options to change the behavior of the call.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="datatable.html" class="tsd-signature-type">DataTable</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Returns a promise containing a page of data from the underlying data of the data source.</p>
-							<p>The following example shows use of the <code>getUnderlyingDataAsync()</code> method to get the underlying data from a specific data source.
-							The example uses the JavaScript <code>find()</code> method to select the workbook and data source.</p>
-							<pre><code><span class="hljs-keyword">const</span> dataSources = <span class="hljs-keyword">await</span> worksheet.getDataSourcesAsync();
-<span class="hljs-keyword">const</span> dataSource = dataSources.find(<span class="hljs-function"><span class="hljs-params">datasource</span> =&gt;</span> datasource.name === <span class="hljs-string">"Sample - Superstore"</span>);
-<span class="hljs-keyword">const</span> dataTable = <span class="hljs-keyword">await</span> dataSource.getUnderlyingDataAsync();
-<span class="hljs-keyword">let</span> field = dataTable.columns.find(<span class="hljs-function"><span class="hljs-params">column</span> =&gt;</span> column.fieldName === <span class="hljs-string">"Sub-Category"</span>);
-<span class="hljs-keyword">let</span> list = [];
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> row <span class="hljs-keyword">of</span> dataTable.data) {
-    list.push(row[field.index].value);
-}
-<span class="hljs-keyword">let</span> values = list.filter(<span class="hljs-function">(<span class="hljs-params">el, i, arr</span>) =&gt;</span> arr.indexOf(el) === i);
-<span class="hljs-built_in">console</span>.log(values);
-</code></pre>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="refreshasync" class="tsd-anchor"></a>
-					<h3>refresh<wbr>Async</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">refresh<wbr>Async<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:61</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>This call has the same functionality as clicking the Refresh option on a data source in
-									Tableau.  This does not refresh an extract.</p>
-								</div>
-								<p><strong>Note:</strong> The <code>refreshAsync()</code> method is intended to be used in scenarios where manual
-									interaction causes a need to refresh the data in the Tableau visualization. The method is not,
-									as currently designed, meant to support or emulate streaming or <em>live</em> visualizations.
-									Extensions that use the method to refresh aggressively or automatically
-									can cause issues on Tableau Server and Tableau Online and are subject to being blocked
-								by the Tableau Online administrator.</p>
-								<p>This call does not currently support refreshing live Google Sheet data sources.</p>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Promise that resolves when the data source has finished refreshing.</p>
-						</li>
-					</ul>
-				</section>
-			</section>
-		</div>
-		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
-			<nav class="tsd-navigation primary">
-				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="tsd-navigation secondary menu-sticky">
-				<ul class="before-current">
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="datasource.html" class="tsd-kind-icon">Data<wbr>Source</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="datasource.html#extractupdatetime" class="tsd-kind-icon">extract<wbr>Update<wbr>Time</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="datasource.html#fields" class="tsd-kind-icon">fields</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="datasource.html#id" class="tsd-kind-icon">id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="datasource.html#isextract" class="tsd-kind-icon">is<wbr>Extract</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="datasource.html#ispublished" class="tsd-kind-icon">is<wbr>Published</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="datasource.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="datasource.html#getactivetablesasync" class="tsd-kind-icon">get<wbr>Active<wbr>Tables<wbr>Async</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="datasource.html#getconnectionsummariesasync" class="tsd-kind-icon">get<wbr>Connection<wbr>Summaries<wbr>Async</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="datasource.html#getlogicaltabledataasync" class="tsd-kind-icon">get<wbr>Logical<wbr>Table<wbr>Data<wbr>Async</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="datasource.html#getlogicaltablesasync" class="tsd-kind-icon">get<wbr>Logical<wbr>Tables<wbr>Async</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="datasource.html#getunderlyingdataasync" class="tsd-kind-icon">get<wbr>Underlying<wbr>Data<wbr>Async</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="datasource.html#refreshasync" class="tsd-kind-icon">refresh<wbr>Async</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div>
-<footer>
-	<div class="container">
-		<h2>Legend</h2>
-		<div class="tsd-legend-group">
-			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
-			</ul>
-		</div>
-	</div>
-</footer>
-<div class="overlay"></div>
-<script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
-<script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+}</script><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>DataSource | Tableau Extensions API</title><link rel="icon" href="../assets/favicon.ico"/><meta name="description" content="Documentation for Tableau Extensions API"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><link rel="stylesheet" href="../assets/custom.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><script async src="../assets/hierarchy.js" id="tsd-hierarchy-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="../index.html" class="title">Tableau Extensions API</a><div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb" aria-label="Breadcrumb"><li><a href="" aria-current="page">DataSource</a></li></ul><h1>Interface DataSource</h1></div><section class="tsd-panel tsd-comment"><div class="tsd-comment tsd-typography"><p>Represents the data source used by a Worksheet.</p>
+</div><div class="tsd-comment tsd-typography"></div></section><div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">DataSource</span> <span class="tsd-signature-symbol">{</span><br/>    <a class="tsd-kind-property" href="#extractupdatetime">extractUpdateTime</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#fields">fields</a><span class="tsd-signature-symbol">:</span> <a href="Field.html" class="tsd-signature-type tsd-kind-interface">Field</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#id">id</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#isextract">isExtract</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#ispublished">isPublished</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#name">name</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#getactivetablesasync-1">getActiveTablesAsync</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TableSummary.html" class="tsd-signature-type tsd-kind-interface">TableSummary</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#getconnectionsummariesasync-1">getConnectionSummariesAsync</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="ConnectionSummary.html" class="tsd-signature-type tsd-kind-interface">ConnectionSummary</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#getlogicaltabledataasync-1">getLogicalTableDataAsync</a><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">logicalTableId</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?:</span> <a href="DataSourceUnderlyingDataOptions.html" class="tsd-signature-type tsd-kind-interface">DataSourceUnderlyingDataOptions</a><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="DataTable.html" class="tsd-signature-type tsd-kind-interface">DataTable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#getlogicaltablesasync-1">getLogicalTablesAsync</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="LogicalTable.html" class="tsd-signature-type tsd-kind-interface">LogicalTable</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#getunderlyingdataasync-1">getUnderlyingDataAsync</a><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?:</span> <a href="DataSourceUnderlyingDataOptions.html" class="tsd-signature-type tsd-kind-interface">DataSourceUnderlyingDataOptions</a><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="DataTable.html" class="tsd-signature-type tsd-kind-interface">DataTable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#refreshasync-1">refreshAsync</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:16</li></ul></aside><section class="tsd-panel-group tsd-index-group"><section class="tsd-panel tsd-index-panel"><details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h5 class="tsd-index-heading uppercase">Index</h5></summary><div class="tsd-accordion-details"><section class="tsd-index-section"><h3 class="tsd-index-heading">Properties</h3><div class="tsd-index-list"><a href="#extractupdatetime" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>extract<wbr/>Update<wbr/>Time</span></a>
+<a href="#fields" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>fields</span></a>
+<a href="#id" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>id</span></a>
+<a href="#isextract" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is<wbr/>Extract</span></a>
+<a href="#ispublished" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is<wbr/>Published</span></a>
+<a href="#name" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>name</span></a>
+</div></section><section class="tsd-index-section"><h3 class="tsd-index-heading">Methods</h3><div class="tsd-index-list"><a href="#getactivetablesasync" class="tsd-index-link deprecated"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Active<wbr/>Tables<wbr/>Async</span></a>
+<a href="#getconnectionsummariesasync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Connection<wbr/>Summaries<wbr/>Async</span></a>
+<a href="#getlogicaltabledataasync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Logical<wbr/>Table<wbr/>Data<wbr/>Async</span></a>
+<a href="#getlogicaltablesasync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Logical<wbr/>Tables<wbr/>Async</span></a>
+<a href="#getunderlyingdataasync" class="tsd-index-link deprecated"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Underlying<wbr/>Data<wbr/>Async</span></a>
+<a href="#refreshasync" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>refresh<wbr/>Async</span></a>
+</div></section></div></details></section></section><details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h2>Properties</h2></summary><section><section class="tsd-panel tsd-member"><h3 class="tsd-anchor-link" id="extractupdatetime"><code class="tsd-tag">Readonly</code><span>extract<wbr/>Update<wbr/>Time</span><a href="#extractupdatetime" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">extractUpdateTime</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">string</span></div><div class="tsd-comment tsd-typography"><div class="tsd-tag-returns"><h4 class="tsd-anchor-link" id="returns">Returns<a href="#returns" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>Last update time of the data source's extract, or undefined if this data source is live.</p>
+</div></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:35</li></ul></aside></section><section class="tsd-panel tsd-member"><h3 class="tsd-anchor-link" id="fields"><code class="tsd-tag">Readonly</code><span>fields</span><a href="#fields" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">fields</span><span class="tsd-signature-symbol">:</span> <a href="Field.html" class="tsd-signature-type tsd-kind-interface">Field</a><span class="tsd-signature-symbol">[]</span></div><div class="tsd-comment tsd-typography"><div class="tsd-tag-returns"><h4 class="tsd-anchor-link" id="returns-1">Returns<a href="#returns-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>An array of fields associated with this data source.</p>
+</div></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:30</li></ul></aside></section><section class="tsd-panel tsd-member"><h3 class="tsd-anchor-link" id="id"><code class="tsd-tag">Readonly</code><span>id</span><a href="#id" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">id</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><div class="tsd-comment tsd-typography"><div class="tsd-tag-returns"><h4 class="tsd-anchor-link" id="returns-2">Returns<a href="#returns-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>Unique string representing this data source.</p>
+</div></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:25</li></ul></aside></section><section class="tsd-panel tsd-member"><h3 class="tsd-anchor-link" id="isextract"><code class="tsd-tag">Readonly</code><span>is<wbr/>Extract</span><a href="#isextract" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">isExtract</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div><div class="tsd-comment tsd-typography"><div class="tsd-tag-returns"><h4 class="tsd-anchor-link" id="returns-3">Returns<a href="#returns-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>True if this data source is an extract, false otherwise.</p>
+</div></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:40</li></ul></aside></section><section class="tsd-panel tsd-member"><h3 class="tsd-anchor-link" id="ispublished"><code class="tsd-tag">Readonly</code><span>is<wbr/>Published</span><a href="#ispublished" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">isPublished</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">boolean</span></div><div class="tsd-comment tsd-typography"><div class="tsd-tag-returns"><h4 class="tsd-anchor-link" id="returns-4">Returns<a href="#returns-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>True if this data source is published to server, false otherwise. Always undefined prior to Tableau 2021.4.</p>
+</div><div class="tsd-tag-since"><h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.7.0 and Tableau 2021.4</p>
+</div></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:46</li></ul></aside></section><section class="tsd-panel tsd-member"><h3 class="tsd-anchor-link" id="name"><code class="tsd-tag">Readonly</code><span>name</span><a href="#name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><div class="tsd-signature"><span class="tsd-kind-property">name</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><div class="tsd-comment tsd-typography"><div class="tsd-tag-returns"><h4 class="tsd-anchor-link" id="returns-5">Returns<a href="#returns-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>The user friendly name of the data source as seen in the UI.</p>
+</div></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:20</li></ul></aside></section></section></details><details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h2>Methods</h2></summary><section><section class="tsd-panel tsd-member"><h3 class="tsd-anchor-link" id="getactivetablesasync"><span class="deprecated">get<wbr/>Active<wbr/>Tables<wbr/>Async</span><a href="#getactivetablesasync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class=""><div class="tsd-signature tsd-anchor-link" id="getactivetablesasync-1"><span class="tsd-kind-call-signature">getActiveTablesAsync</span><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TableSummary.html" class="tsd-signature-type tsd-kind-interface">TableSummary</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#getactivetablesasync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div><div class="tsd-description"><h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="TableSummary.html" class="tsd-signature-type tsd-kind-interface">TableSummary</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><p>An array of table summary objects that are currently used in the data source.</p>
+<div class="tsd-comment tsd-typography"><div class="tsd-tag-throws"><h4 class="tsd-anchor-link" id="throws">Throws<a href="#throws" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>UnsupportedMethodForDataSourceType error if this method is called on a Cube DataSource or GA.</p>
+</div><div class="tsd-tag-deprecated"><h4 class="tsd-anchor-link" id="deprecated">Deprecated<a href="#deprecated" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>since version 1.4.0.  Use DataSource.getLogicalTablesAsync.</p>
+</div></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:79</li></ul></aside></div></li></ul></section><section class="tsd-panel tsd-member"><h3 class="tsd-anchor-link" id="getconnectionsummariesasync"><span>get<wbr/>Connection<wbr/>Summaries<wbr/>Async</span><a href="#getconnectionsummariesasync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class=""><div class="tsd-signature tsd-anchor-link" id="getconnectionsummariesasync-1"><span class="tsd-kind-call-signature">getConnectionSummariesAsync</span><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="ConnectionSummary.html" class="tsd-signature-type tsd-kind-interface">ConnectionSummary</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#getconnectionsummariesasync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div><div class="tsd-description"><h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="ConnectionSummary.html" class="tsd-signature-type tsd-kind-interface">ConnectionSummary</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><p>An array of descriptions of the connections within this data source.</p>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:84</li></ul></aside></div></li></ul></section><section class="tsd-panel tsd-member"><h3 class="tsd-anchor-link" id="getlogicaltabledataasync"><span>get<wbr/>Logical<wbr/>Table<wbr/>Data<wbr/>Async</span><a href="#getlogicaltabledataasync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class=""><div class="tsd-signature tsd-anchor-link" id="getlogicaltabledataasync-1"><span class="tsd-kind-call-signature">getLogicalTableDataAsync</span><span class="tsd-signature-symbol">(</span><br/>    <span class="tsd-kind-parameter">logicalTableId</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?:</span> <a href="DataSourceUnderlyingDataOptions.html" class="tsd-signature-type tsd-kind-interface">DataSourceUnderlyingDataOptions</a><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="DataTable.html" class="tsd-signature-type tsd-kind-interface">DataTable</a><span class="tsd-signature-symbol">&gt;</span><a href="#getlogicaltabledataasync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div><div class="tsd-description"><div class="tsd-comment tsd-typography"><p>Gets the underlying data table for the given logical table id.</p>
+</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">logicalTableId</span>: <span class="tsd-signature-type">string</span></span></li><li><span><code class="tsd-tag">Optional</code><span class="tsd-kind-parameter">options</span>: <a href="DataSourceUnderlyingDataOptions.html" class="tsd-signature-type tsd-kind-interface">DataSourceUnderlyingDataOptions</a></span><div class="tsd-comment tsd-typography"><p>Collection of options to change the behavior of the call.</p>
+</div><div class="tsd-comment tsd-typography"></div></li></ul></div><h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="DataTable.html" class="tsd-signature-type tsd-kind-interface">DataTable</a><span class="tsd-signature-symbol">&gt;</span></h4><p>A data table containing the underlying data of the data source.</p>
+<div class="tsd-comment tsd-typography"><div class="tsd-tag-see"><h4 class="tsd-anchor-link" id="see">See<a href="#see" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>getLogicalTableDataReaderAsync to read more than 10,000 rows.</p>
+<p>You can use the <code>getUnderlyingDataOptions.maxRows</code> property to request the number of rows of data to return.
+If unspecified (maxRows == '0'), the call to <code>getLogicalTableDataAsync</code> requests all rows in the logical table.
+Note that the maximum number of rows returned from the <code>getLogicalTableDataAsync()</code> method is limited
+to 10,000 rows. You can use the <code>DataTable</code> property, <code>isTotalRowCountLimited</code>, to test whether there is
+more data. A value of true indicates that the calling function requested more rows than the limit (10,000) and the
+underlying data source contains more rows than can be returned.</p>
+<p>The following example shows use of the getLogicalTableDataAsync() method to get the data from a specific logical table in a data source.
+The example uses the JavaScript find() method to select the workbook, and uses the getLogicalTablesAsync method to identify the logical table id.</p>
+<pre><code><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-6">dataSources</span><span class="hl-0"> = </span><span class="hl-8">await</span><span class="hl-0"> </span><span class="hl-2">worksheet</span><span class="hl-0">.</span><span class="hl-3">getDataSourcesAsync</span><span class="hl-0">();</span><br/><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-6">dataSource</span><span class="hl-0"> = </span><span class="hl-2">dataSources</span><span class="hl-0">.</span><span class="hl-3">find</span><span class="hl-0">(</span><span class="hl-2">datasource</span><span class="hl-0"> </span><span class="hl-1">=&gt;</span><span class="hl-0"> </span><span class="hl-2">datasource</span><span class="hl-0">.</span><span class="hl-2">name</span><span class="hl-0"> === </span><span class="hl-5">&quot;Sample - Superstore&quot;</span><span class="hl-0">);</span><br/><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-6">logicalTables</span><span class="hl-0"> = </span><span class="hl-8">await</span><span class="hl-0"> </span><span class="hl-2">dataSource</span><span class="hl-0">.</span><span class="hl-3">getLogicalTablesAsync</span><span class="hl-0">()</span><br/><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-6">dataTable</span><span class="hl-0"> = </span><span class="hl-8">await</span><span class="hl-0"> </span><span class="hl-2">dataSource</span><span class="hl-0">.</span><span class="hl-3">getLogicalTableDataAsync</span><span class="hl-0">(</span><span class="hl-2">logicalTables</span><span class="hl-0">[</span><span class="hl-7">0</span><span class="hl-0">].</span><span class="hl-2">id</span><span class="hl-0">);</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-3">log</span><span class="hl-0">(</span><span class="hl-2">dataTable</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
 
-        ga('create', '469571326', 'auto');
-        ga('send', 'pageview');
-    </script>
-</body>
-</html>
+</div></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:156</li></ul></aside></div></li></ul></section><section class="tsd-panel tsd-member"><h3 class="tsd-anchor-link" id="getlogicaltablesasync"><span>get<wbr/>Logical<wbr/>Tables<wbr/>Async</span><a href="#getlogicaltablesasync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class=""><div class="tsd-signature tsd-anchor-link" id="getlogicaltablesasync-1"><span class="tsd-kind-call-signature">getLogicalTablesAsync</span><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="LogicalTable.html" class="tsd-signature-type tsd-kind-interface">LogicalTable</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#getlogicaltablesasync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div><div class="tsd-description"><div class="tsd-comment tsd-typography"><p>Gets the underlying logical tables used in the data source.</p>
+</div><h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="LogicalTable.html" class="tsd-signature-type tsd-kind-interface">LogicalTable</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><p>An array of logical tables that are currently used in the data source.</p>
+<p>The following example uses the <code>getLogicalTablesAsync</code> method to print the names of the
+the logical tables to the console.</p>
+<pre><code><span class="hl-2">dataSource</span><span class="hl-0">.</span><span class="hl-3">getLogicalTablesAsync</span><span class="hl-0">().</span><span class="hl-3">then</span><span class="hl-0">(</span><span class="hl-1">function</span><span class="hl-0"> (</span><span class="hl-2">logicalTables</span><span class="hl-0">) {</span><br/><span class="hl-0">  </span><span class="hl-4">// Loop through each table that was used in creating this data source</span><br/><span class="hl-0">  </span><span class="hl-2">logicalTables</span><span class="hl-0">.</span><span class="hl-3">forEach</span><span class="hl-0">(</span><span class="hl-1">function</span><span class="hl-0"> (</span><span class="hl-2">table</span><span class="hl-0">) {</span><br/><span class="hl-0">     </span><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-3">log</span><span class="hl-0">(</span><span class="hl-2">table</span><span class="hl-0">.</span><span class="hl-2">caption</span><span class="hl-0">);</span><br/><span class="hl-0">  });</span><br/><span class="hl-0">});</span>
+</code><button>Copy</button></pre>
+
+<div class="tsd-comment tsd-typography"><div class="tsd-tag-since"><h4 class="tsd-anchor-link" id="since-1">Since<a href="#since-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.4.0</p>
+</div></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:129</li></ul></aside></div></li></ul></section><section class="tsd-panel tsd-member"><h3 class="tsd-anchor-link" id="getunderlyingdataasync"><span class="deprecated">get<wbr/>Underlying<wbr/>Data<wbr/>Async</span><a href="#getunderlyingdataasync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class=""><div class="tsd-signature tsd-anchor-link" id="getunderlyingdataasync-1"><span class="tsd-kind-call-signature">getUnderlyingDataAsync</span><span class="tsd-signature-symbol">(</span><br/>    <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?:</span> <a href="DataSourceUnderlyingDataOptions.html" class="tsd-signature-type tsd-kind-interface">DataSourceUnderlyingDataOptions</a><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="DataTable.html" class="tsd-signature-type tsd-kind-interface">DataTable</a><span class="tsd-signature-symbol">&gt;</span><a href="#getunderlyingdataasync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div><div class="tsd-description"><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><code class="tsd-tag">Optional</code><span class="tsd-kind-parameter">options</span>: <a href="DataSourceUnderlyingDataOptions.html" class="tsd-signature-type tsd-kind-interface">DataSourceUnderlyingDataOptions</a></span><div class="tsd-comment tsd-typography"><p>Collection of options to change the behavior of the call.</p>
+</div><div class="tsd-comment tsd-typography"></div></li></ul></div><h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="DataTable.html" class="tsd-signature-type tsd-kind-interface">DataTable</a><span class="tsd-signature-symbol">&gt;</span></h4><p>Returns a promise containing a page of data from the underlying data of the data source.</p>
+<p>The following example shows use of the <code>getUnderlyingDataAsync()</code> method to get the underlying data from a specific data source.
+The example uses the JavaScript <code>find()</code> method to select the workbook and data source.</p>
+<pre><code><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-6">dataSources</span><span class="hl-0"> = </span><span class="hl-8">await</span><span class="hl-0"> </span><span class="hl-2">worksheet</span><span class="hl-0">.</span><span class="hl-3">getDataSourcesAsync</span><span class="hl-0">();</span><br/><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-6">dataSource</span><span class="hl-0"> = </span><span class="hl-2">dataSources</span><span class="hl-0">.</span><span class="hl-3">find</span><span class="hl-0">(</span><span class="hl-2">datasource</span><span class="hl-0"> </span><span class="hl-1">=&gt;</span><span class="hl-0"> </span><span class="hl-2">datasource</span><span class="hl-0">.</span><span class="hl-2">name</span><span class="hl-0"> === </span><span class="hl-5">&quot;Sample - Superstore&quot;</span><span class="hl-0">);</span><br/><span class="hl-1">const</span><span class="hl-0"> </span><span class="hl-6">dataTable</span><span class="hl-0"> = </span><span class="hl-8">await</span><span class="hl-0"> </span><span class="hl-2">dataSource</span><span class="hl-0">.</span><span class="hl-3">getUnderlyingDataAsync</span><span class="hl-0">();</span><br/><span class="hl-1">let</span><span class="hl-0"> </span><span class="hl-2">field</span><span class="hl-0"> = </span><span class="hl-2">dataTable</span><span class="hl-0">.</span><span class="hl-2">columns</span><span class="hl-0">.</span><span class="hl-3">find</span><span class="hl-0">(</span><span class="hl-2">column</span><span class="hl-0"> </span><span class="hl-1">=&gt;</span><span class="hl-0"> </span><span class="hl-2">column</span><span class="hl-0">.</span><span class="hl-2">fieldName</span><span class="hl-0"> === </span><span class="hl-5">&quot;Sub-Category&quot;</span><span class="hl-0">);</span><br/><span class="hl-1">let</span><span class="hl-0"> </span><span class="hl-2">list</span><span class="hl-0"> = [];</span><br/><span class="hl-8">for</span><span class="hl-0"> (</span><span class="hl-1">let</span><span class="hl-0"> </span><span class="hl-2">row</span><span class="hl-0"> </span><span class="hl-1">of</span><span class="hl-0"> </span><span class="hl-2">dataTable</span><span class="hl-0">.</span><span class="hl-2">data</span><span class="hl-0">) {</span><br/><span class="hl-0">    </span><span class="hl-2">list</span><span class="hl-0">.</span><span class="hl-3">push</span><span class="hl-0">(</span><span class="hl-2">row</span><span class="hl-0">[</span><span class="hl-2">field</span><span class="hl-0">.</span><span class="hl-2">index</span><span class="hl-0">].</span><span class="hl-2">value</span><span class="hl-0">);</span><br/><span class="hl-0">}</span><br/><span class="hl-1">let</span><span class="hl-0"> </span><span class="hl-2">values</span><span class="hl-0"> = </span><span class="hl-2">list</span><span class="hl-0">.</span><span class="hl-3">filter</span><span class="hl-0">((</span><span class="hl-2">el</span><span class="hl-0">, </span><span class="hl-2">i</span><span class="hl-0">, </span><span class="hl-2">arr</span><span class="hl-0">) </span><span class="hl-1">=&gt;</span><span class="hl-0"> </span><span class="hl-2">arr</span><span class="hl-0">.</span><span class="hl-3">indexOf</span><span class="hl-0">(</span><span class="hl-2">el</span><span class="hl-0">) === </span><span class="hl-2">i</span><span class="hl-0">);</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-3">log</span><span class="hl-0">(</span><span class="hl-2">values</span><span class="hl-0">);</span><br/>
+</code><button>Copy</button></pre>
+
+<div class="tsd-comment tsd-typography"><div class="tsd-tag-deprecated"><h4 class="tsd-anchor-link" id="deprecated-1">Deprecated<a href="#deprecated-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>Use DataSource.getLogicalTableDataReaderAsync or DataSource.getLogicalTableDataAsync.</p>
+</div></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:108</li></ul></aside></div></li></ul></section><section class="tsd-panel tsd-member"><h3 class="tsd-anchor-link" id="refreshasync"><span>refresh<wbr/>Async</span><a href="#refreshasync" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul class="tsd-signatures"><li class=""><div class="tsd-signature tsd-anchor-link" id="refreshasync-1"><span class="tsd-kind-call-signature">refreshAsync</span><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#refreshasync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div><div class="tsd-description"><div class="tsd-comment tsd-typography"><p>This call has the same functionality as clicking the Refresh option on a data source in
+Tableau.  This does not refresh an extract.</p>
+<div class="tsd-alert tsd-alert-note"><div class="tsd-alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><use href="../assets/icons.svg#icon-alertNote"></use></svg><span>Note</span></div><p> The <code>refreshAsync()</code> method is intended to be used in scenarios where manual
+interaction causes a need to refresh the data in the Tableau visualization. The method is not,
+as currently designed, meant to support or emulate streaming or <em>live</em> visualizations.
+Extensions that use the method to refresh aggressively or automatically
+can cause issues on Tableau Server and Tableau Online and are subject to being blocked
+by the Tableau Online administrator.</p>
+</div>
+<p>This call does not currently support refreshing live Google Sheet data sources.</p>
+</div><h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><p>Promise that resolves when the data source has finished refreshing.</p>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources"><ul><li>Defined in packages/api-external-contract-js/src/ExternalContract/Shared/DataSourceInterfaces.ts:70</li></ul></aside></div></li></ul></section></section></details></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>On This Page</h3></summary><div class="tsd-accordion-details"><details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Properties</summary><div><a href="#extractupdatetime"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>extract<wbr/>Update<wbr/>Time</span></a><a href="#fields"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>fields</span></a><a href="#id"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>id</span></a><a href="#isextract"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is<wbr/>Extract</span></a><a href="#ispublished"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is<wbr/>Published</span></a><a href="#name"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>name</span></a></div></details><details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Methods</summary><div><a href="#getactivetablesasync"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Active<wbr/>Tables<wbr/>Async</span></a><a href="#getconnectionsummariesasync"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Connection<wbr/>Summaries<wbr/>Async</span></a><a href="#getlogicaltabledataasync"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Logical<wbr/>Table<wbr/>Data<wbr/>Async</span></a><a href="#getlogicaltablesasync"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Logical<wbr/>Tables<wbr/>Async</span></a><a href="#getunderlyingdataasync"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>get<wbr/>Underlying<wbr/>Data<wbr/>Async</span></a><a href="#refreshasync"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Method"><use href="../assets/icons.svg#icon-2048"></use></svg><span>refresh<wbr/>Async</span></a></div></details></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="../modules.html">Tableau Extensions API</a><ul class="tsd-small-nested-navigation" id="tsd-nav-container"><li>Loading...</li></ul></nav></div></div></div><footer><hr class="footer-hr">
+<nav aria-label="Footer Navigation">
+    <ul class="footer-links">
+        <li><a href="https://www.salesforce.com/company/legal/">Legal</a></li>
+        <li><a href="https://www.salesforce.com/company/legal/sfdc-website-terms-of-service/">Terms of Service</a></li>
+        <li><a href="https://www.salesforce.com/company/privacy/">Privacy Information</a></li>
+        <li><a href="https://www.salesforce.com/company/legal/disclosure/">Responsible Disclosure</a></li>
+        <li><a href="https://trust.salesforce.com/">Trust</a></li>
+        <li><a href="#" data-ignore-geolocation="true" class="optanon-toggle-display">Cookie Preferences</a></li>
+        <li><a href="https://www.salesforce.com/form/other/privacy-request/">Your Privacy Choices</a></li>
+    </ul>
+    <p class="copyRight">&copy; Copyright <script>document.write(new Date().getFullYear())</script> Salesforce, Inc. <a href="https://www.salesforce.com/company/legal/tmcusageguidelines/">All rights reserved.</a> Various trademarks held by their respective owners.
+        Salesforce, Inc. Salesforce Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105, United States</p>
+    <sub class="docs-generated">Documentation last generated on: June 17, 2026 (1.238.0)</sub>
+    <div style="height: 1.5rem;"></div>
+</nav>
+</footer><div class="overlay"></div><script async src="https://www.googletagmanager.com/gtag/js?id=G-376609887"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-376609887');</script></body></html>

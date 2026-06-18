@@ -9,7 +9,7 @@ To help your dashboard extension match the look and feel of the dashboard in whi
 
 ## Apply Tableau classes to HTML elements
 
-Starting with the Dashboard Extensions API v1.7 library, and supported with Tableau 2021.4 or later, you can apply workbook formatting styles by specifying the class on the HTML elements in your extension. The specific Tableau classes to use are defined in the [`ClassNameKey`](pathname:///api/enums/tableau.classnamekey.html) enum.
+Starting with the Dashboard Extensions API v1.7 library, and supported with Tableau 2021.4 or later, you can apply workbook formatting styles by specifying the class on the HTML elements in your extension. The specific Tableau classes to use are defined in the [`ClassNameKey`](pathname:///api/enums/ClassNameKey.html) enum.
 
 | HTML style (string literal) | ClassNameKey enum|
 | :------------  | :---------- |
@@ -91,4 +91,4 @@ For more information about using event listeners, see [Events and Event Handling
 
 * To see a working sample dashboard extension that uses workbook formatting, see the JavaScript [Formatting](https://github.com/tableau/extensions-api/tree/main/Samples/Dashboard/Formatting) sample in the Samples folder, or the TypeScript [Formatting](https://github.com/tableau/extensions-api/tree/main/Samples-Typescript/Dashboard/Formatting) sample in the Samples-Typescript folder.
 
-* For information about accessing the formatting styles in a workbook, see [workbookFormatting](pathname:///api/interfaces/environment.html#workbookformatting) in the API reference documentation.
+* For information about accessing the formatting styles in a workbook, see [workbookFormatting](pathname:///api/interfaces/Environment.html#workbookformatting) in the API reference documentation.
